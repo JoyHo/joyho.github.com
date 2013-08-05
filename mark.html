@@ -10,6 +10,14 @@
     <link href="image/me.ico" rel="shortcut icon"type="image/png" />
     <link href="css/top.css" rel="Stylesheet" type="text/css" media="screen" />
     <link href="css/mark.css" rel="stylesheet" type="text/css" media="screen" />
+    <script>
+	$(function(){
+		if(window.ActiveXObject){
+			$('.list li img').remove();
+			$('.list li').css({"width":"auto","height":"auto"});
+			}
+		});
+	</script>
 </head>
 
 <body>
