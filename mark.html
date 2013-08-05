@@ -9,151 +9,7 @@
     <title>我的标签</title>
     <link href="image/me.ico" rel="shortcut icon"type="image/png" />
     <link href="css/top.css" rel="Stylesheet" type="text/css" media="screen" />
-	<style>
-	.animated {
-	-webkit-animation-duration: 1s;
-	   -moz-animation-duration: 1s;
-	     -o-animation-duration: 1s;
-	        animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	   -moz-animation-fill-mode: both;
-	     -o-animation-fill-mode: both;
-	        animation-fill-mode: both;
-}
-
-.animated.hinge {
-	-webkit-animation-duration: 2s;
-	   -moz-animation-duration: 2s;
-	     -o-animation-duration: 2s;
-	        animation-duration: 2s;
-}
-
-@-webkit-keyframes hinge {
-	0% { -webkit-transform: rotate(0); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
-	20%, 60% { -webkit-transform: rotate(80deg); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
-	40% { -webkit-transform: rotate(60deg); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
-	80% { -webkit-transform: rotate(60deg) translateY(0); opacity: 1; -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
-	100% { -webkit-transform: translateY(700px); opacity: 0; }
-}
-
-@-moz-keyframes hinge {
-	0% { -moz-transform: rotate(0); -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
-	20%, 60% { -moz-transform: rotate(80deg); -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
-	40% { -moz-transform: rotate(60deg); -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
-	80% { -moz-transform: rotate(60deg) translateY(0); opacity: 1; -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
-	100% { -moz-transform: translateY(700px); opacity: 0; }
-}
-
-@-o-keyframes hinge {
-	0% { -o-transform: rotate(0); -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
-	20%, 60% { -o-transform: rotate(80deg); -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
-	40% { -o-transform: rotate(60deg); -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
-	80% { -o-transform: rotate(60deg) translateY(0); opacity: 1; -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
-	100% { -o-transform: translateY(700px); opacity: 0; }
-}
-
-@keyframes hinge {
-	0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; }	
-	20%, 60% { transform: rotate(80deg); transform-origin: top left; animation-timing-function: ease-in-out; }	
-	40% { transform: rotate(60deg); transform-origin: top left; animation-timing-function: ease-in-out; }	
-	80% { transform: rotate(60deg) translateY(0); opacity: 1; transform-origin: top left; animation-timing-function: ease-in-out; }	
-	100% { transform: translateY(700px); opacity: 0; }
-}
-
-.animated.hinge {
-	-webkit-animation-name: hinge;
-	-moz-animation-name: hinge;
-	-o-animation-name: hinge;
-	animation-name: hinge;
-}
-	
-	body{background-color:#edecda;}
-    .main{width:815px;height:auto;margin-left:95px;padding-left:105px;background:url(image/work/paper.jpg)left top repeat;position:relative;padding-bottom:100px;}
-	.main h2{line-height:39px;color:#000;padding:45px 0 0 0px;}
-	.mark_nav{width:185px;height:222px;position:absolute;left:700px;top:50px;background:url(image/bq.png)left top no-repeat;}
-	.mark_nav ul{list-style-type:none;padding:10px;}
-	.mark_nav li{width:100%;height:30px;padding-left:10px;}
-	.mark_nav li a{display:block;width:100%;height:100%;font-size:18px;color:#6699FF;text-decoration:none;padding-left:10px;}
-	
-	.bottom{height:100px;}
-	
-	
-.list{list-style-type:none;padding-left:40px;padding-right:40px;}
-.list li{
-	display:inline-block;
-	height:190px;
-	width:150px;
-	-webkit-transform-style:preserve-3d;
-	-moz-transform-style:preserve-3d;
-	-o-transform-style:preserve-3d;
-	transform-style:preserve-3d;
-    -webkit-perspective: 500;
-	-webkit-transition:all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;
-	-o-transition:all 0.5s ease-in-out;
-	transition:all 0.5s ease-in-out;
-	}
-.list img{
-	width:120px;
-	height:150px;
-	-webkit-box-shadow:0 20px 40px #999;
-	-moz-box-shadow:0 20px 40px #999;
-	-o-box-shadow:0 20px 40px #999;
-	box-shadow:0 10px 20px #999;
-    -webkit-transform:rotateY(30deg);
-	-moz-transform:rotateY(30deg);
-	-o-transform:rotateY(30deg);
-	transform:rotateY(30deg);
-	border:10px solid #666;
-	-webkit-transition:all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;
-	-o-transition:all 0.5s ease-in-out;
-	transition:all 0.5s ease-in-out;
-	}
-.info{
-	width:80px;
-	height:60px;
-	font-size:16px;
-	line-height:16px;
-	text-align:center;
-	background-color:#CCC;
-	border:5px solid #fff;
-	margin:-130px 0 0 30px;
-	-webkit-box-shadow:0 10px 10px #CCC;
-	-moz-box-shadow:0 10px 10px #CCC;
-	-o-box-shadow:0 10px 10px #CCC;
-	box-shadow:0 10px 10px #CCC;
-	-webkit-transform: translateZ(20px) rotateY(30deg);
-	-moz-transform: translateZ(20px) rotateY(30deg);
-	-o-transform: translateZ(20px) rotateY(30deg);
-	transform: translateZ(20px) rotateY(30deg);
-	-webkit-transition:all 0.7s ease-in-out;
-	-moz-transition:all 0.7s ease-in-out;
-	-o-transition:all 0.7s ease-in-out;
-	transition:all 0.7s ease-in-out;
-	}
-.info h3{margin-top:20px;}
-.list li:hover{
-	-webkit-perspective: 5000;
-	-moz-perspective: 5000;
-	-o-perspective: 5000;
-	perspective: 5000;
-	position:relative;
-	z-index:100;
-	}
-.list li:hover img,.list li:hover .info{
-	-webkit-transform:rotateY(0deg) scale(1.5,1.5);
-	-moz-transform:rotateY(0deg) scale(1.5,1.5);
-	-o-transform:rotateY(0deg) scale(1.5,1.5);
-	transform:rotateY(0deg) scale(1.5,1.5);
-	}
-.list li:hover .info{
-	-webkit-box-shadow:0 5px 5px #ccc;
-	-moz-box-shadow:0 5px 5px #ccc;
-	-o-box-shadow:0 5px 5px #ccc;
-	box-shadow:0 5px 5px #ccc;
-	}
-	</style>
+    <link href="css/mark.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -172,15 +28,10 @@
   </div><!--end of top-->
   <div class="main">
      <h2>我的标签</h2>
-	 <!--<div class="mark_nav">
-	    <ul>
-		   <li><a href="#">Javascript</a></li>
-		   <li><a href="#">jQuery</a></li>
-		   <li><a href="#">html+css</a></li>
-		   <li><a href="#">Ajax</a></li>
-		   <li><a href="#">Asp.net</a></li>
-		</ul>
-	 </div>-->
+	 <div class="android_app">
+     <img src="image/myapp.png" alt="android app" />
+	 <p>Mobile(android)下载</p>
+  </div><!--end of android_app-->
      <div class="main_content">
          <ul class="list">
    <li>
