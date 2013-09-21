@@ -61,6 +61,10 @@ visibility: hidden;
 	margin-bottom:24px;
 	height:62px;
 	}
+.at_info p span{
+	display:block;
+	float:left;
+	}
 .at_info img{
 	width:62px;
 	height:62px;
