@@ -30,6 +30,13 @@ a:hover {text-decoration:none;}
 	font-size:15px;
 	background:url(../images/btn.png) no-repeat center center;
 	}
+.cf:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
 .info{
 	height:22px;
 	color:#3696969;
@@ -53,10 +60,6 @@ a:hover {text-decoration:none;}
 	line-height:16px;
 	margin-bottom:24px;
 	height:62px;
-	}
-.at_info p span{
-	position:relative;
-	top:38%;
 	}
 .at_info img{
 	width:62px;
