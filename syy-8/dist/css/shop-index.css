@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+.s-i-body {
+	margin: 0px;
+	background: #fff;
+}
+.s-i-header {
+	height: 47px;
+	padding: 37px 0px;
+	text-align: center;
+}
+.s-i-header img:first-child {
+	margin-right: 15px;
+	width: 48px;
+	height: 48px;
+}
+.s-i-header img:last-child {
+	width: 82px;
+	height: 43px;
+}
+.s-i-search {
+	background-color: #3498db;
+	margin: 0 13px;
+	padding: 4px 40px 4px 7px;
+	position: relative;
+}
+.s-i-search input:first-child {
+	width: 100%;
+	height: 31px;
+	display: inline-block;
+	background-color: #fff;
+	color: #9fa6ab;
+	font-size: 13px;
+	line-height: 31px;
+	text-indent: 10px;
+	border: none;
+	-webkit-border-radius: 0px;
+}
+.s-i-search input:last-child {
+	width: 33px;
+	height: 36px;
+	display: block;
+	position: absolute;
+	right: 3px;
+	margin-top: -16px;
+	top: 50%;
+	background: #3498db url(../images/sq-icon@2x.png) -48px -72px no-repeat;
+	background-size: 125px;
+	border: none;
+	padding:0px;
+}
+.s-i-tuijian {
+	color: #7f8c8d;
+	font-size: 13px;
+	margin: 14px 0px 0px 0px;
+	text-align: center;
+}
+.s-i-tuijian a {
+	font-size: 14px;
+	color: #3498db;
+	margin-right: 11px;
+	text-decoration: none;
+}
+.s-i-tuijian a:first-child {
+	margin-left: 12px;
+}
+.s-i-footer ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+.s-i-footer li {
+	display: inline-block;
+	margin-right: 29px;
+}
+.s-i-footer li:last-child {
+	margin-right: 0px;
+}
+.s-i-footer li a {
+	text-decoration: none;
+	color: #7f8c8d;
+	font-size: 11px;
+}
+.s-i-footer li a img {
+	width: 21px;
+	height: 22px;
+}
+.s-i-footer li a span {
+	display: block;
+}
+@media screen and (orientation:portrait) {
+.s-i-footer {
+	position: fixed;
+	bottom: 18px;
+	left: 50%;
+	margin-left: -139px;
+}
+}
+@media screen and (orientation:landscape) {
+.s-i-footer {
+	margin-top: 50px;
+}
+}
+
