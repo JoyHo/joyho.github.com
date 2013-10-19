@@ -9,7 +9,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div class="path"><em><a href="main.html">雀彩</a></em><em><a href="#">双色球</a></em><span>快捷点选</span><i><a href="#">充值</a></i></div>
+<div class="path"><em><a href="main.html">雀彩</a></em><em><a href="#">双色球</a></em><span>机选</span><i><a href="#">充值</a></i></div>
 <section>
   <div class="content">
     <div class="dashed">
@@ -24,66 +24,33 @@
       <p class="pt10"><span>119</span>期:距截止<span class="red">31</span>时<span class="red">15</span>分</p>
   </div>
   <div class="title_sub"><span>点选</span><a href="#">手输</a><a href="#">机选</a><a href="#">胆拖</a></div>
-  <form action="#">
-    <div class="ball_red dashed"  id="ball_red"> 红球<i>（01-33中至少选6个）</i>
-      <ul  class="clearfix">
-        <li>01</li>
-        <li>02</li>
-        <li>03</li>
-        <li>04</li>
-        <li>05</li>
-        <li>06</li>
-        <li>07</li>
-        <li>08</li>
-        <li>09</li>
-        <li>10</li>
-        <li>11</li>
-        <li>12</li>
-        <li>13</li>
-        <li>14</li>
-        <li>15</li>
-        <li>16</li>
-        <li>18</li>
-        <li>19</li>
-        <li>20</li>
-        <li>21</li>
-        <li>22</li>
-        <li>23</li>
-        <li>24</li>
-        <li>25</li>
-        <li>26</li>
-        <li>26</li>
-        <li>27</li>
-        <li>28</li>
-        <li>29</li>
-        <li>30</li>
-        <li>31</li>
-        <li>32</li>
-        <li>33</li>
-      </ul>
-    </div>
-    <div class="ball_blue" id="ball_blue"> 蓝球<i>（01-16中至少选1个）</i>
-      <ul class="clearfix">
-        <li>01</li>
-        <li>02</li>
-        <li>03</li>
-        <li>04</li>
-        <li>05</li>
-        <li>06</li>
-        <li>07</li>
-        <li>08</li>
-        <li>09</li>
-        <li>10</li>
-        <li>11</li>
-        <li>12</li>
-        <li>13</li>
-        <li>14</li>
-        <li>15</li>
-        <li>16</li>
-      </ul>
-    </div>
-    <div class="title_sub title_sub_reset title"><p>已选<i class="red">0</i>注，<i class="red">0</i>元<em><a class="red" href="#">随机选号</a></em></p></div>
-  </form>
+  <div class="content">
+      <div class="jixuan-qiu bg-pink">
+        <p>红球<input class="input-64 textcenter" type="text" value="6">个</p>
+        <p>红胆<input class="input-64 textcenter" type="text" placeholder="如0608">(填写您认为必出的红球)</p>
+      </div>
+      <div class="jixuan-qiu bg-powerblue">
+        <p>篮球<input class="input-64 textcenter" type="text" value="6">个</p>
+        <p>蓝胆<input class="input-64 textcenter" type="text" placeholder="如0608">(填写您认为必出的篮球)</p>
+      </div>
+  </div>
+  <div class="content">
+        <p>我要随机选
+            <input name="" type="text" class="input-106">
+            <a href="#" class="btn-confirm fr">出号</a>
+        </p>
+  </div>
+  <div class="content">
+      <div class="border pd10">
+        <p><a class="block" href="#"><span class="red">02,03,09,12,30,33</span><span class="yellow">|</span><span class="blue">04</span><em>×</em></a></p>
+        <p><a class="block" href="#"><span class="red">02,03,09,12,30,33</span><span class="yellow">|</span><span class="blue">04</span><em>×</em></a></p>
+        <p><a class="block" href="#"><span class="red">02,03,09,12,30,33</span><span class="yellow">|</span><span class="blue">04</span><em>×</em></a></p>
+        <p><a class="block" href="#"><span class="red">02,03,09,12,30,33</span><span class="yellow">|</span><span class="blue">04</span><em>×</em></a></p>
+        <p><a class="block" href="#"><span class="red">02,03,09,12,30,33</span><span class="yellow">|</span><span class="blue">04</span><em>×</em></a></p>
+        <p>一共<span class="red">5</span>注，<span class="red">10</span>元<span class="yellow">|</span><a class="mar10" href="#">清空列表</a><a href="#">[重选]</a></p>
+      </div>
+      
+  </div>
   <form action="#">
     <table border="0" cellpadding="0" cellspacing="0" class="table1">
       <tr>
@@ -104,18 +71,20 @@
         最近投注[<a href="#">查看更多</a>]
         <p class="haoma">117期:<span class="red">01</span><span class="red">02</span><span class="red">13</span><span class="red">24</span><span class="red">27</span><span class="red">33</span><span class="gray">|</span><span class="blue">10</span><em><span>未开奖</span></em></p>
     </div>
-    <div class="content link_b"><a href="#">返回上页</a><span class="gray">|</span><a href="#">开奖历史</a><span class="gray">|</span><a href="#">预测</a><span class="gray">|</span><a href="#">玩法介绍</a></div>
+    <div class="content link_b"><a href="#">开奖历史</a><span class="gray">|</span><a href="#">预测</a><span class="gray">|</span><a href="#">玩法介绍</a></div>
   </form>
+  <div class="content paddingtop0">
+     <p><a href="#"><img class="arrow-left" src="images/arrow.png" alt="" />返回上页</a></p>
+  </div>
 </section>
 <!-----底部-->
 <div id="footer">
   <nav>
     <ul>
       <li><a href="#">首页</a></li>
-      <li><a href="#">客户端</a></li>
-      <li><a href="#">存书签</a></li>
-      <li><a href="#">登录</a></li>
-      <li><a href="#">注册</a></li>
+      <li><a href="#">加书签</a></li>
+      <li><a href="#">用户中心</a></li>
+      <li><a href="#">退出</a></li>
     </ul>
   </nav>
  <footer class="clearfix">

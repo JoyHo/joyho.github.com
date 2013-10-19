@@ -3324,6 +3324,9 @@ span .markup-red {
 .border{
 	border:1px solid #f0f0f0;
 	}
+.block{
+	display:block;
+	}
 /******************sucx-loc-9-双色球wap改版   矩阵**********************/
 .radio-list{
 	position:relative;
