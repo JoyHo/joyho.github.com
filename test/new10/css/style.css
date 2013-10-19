@@ -3394,6 +3394,13 @@ span .markup-red {
 .choose-reset{
 	padding-left:90px;
 	}
+.choose-reset p{
+	margin-bottom:0px;
+	}
+.choose-reset .selects{
+	top:0px;
+	height:30px;
+	}
 .choose-reset p span{
 	width:82px;
 	text-align:left;
