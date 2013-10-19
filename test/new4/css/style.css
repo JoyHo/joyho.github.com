@@ -3340,8 +3340,9 @@ span .markup-red {
 	display:inline-block;
 	vertical-align: middle;
 	position:relative;
-	left:82px;
+	left:0px;
 	top:-4px;
+	padding-left:82px;
 	}
 .radio-list li{
 	float:left;
