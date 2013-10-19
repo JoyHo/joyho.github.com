@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type"  content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
+<meta name="MobileOptimized" content="320"/>
+<title>雀彩</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="path"><em><a href="main.html"><img src="images/home.png" uc_img_mode="4"></a></em><em><a href="#">竞彩篮球</a></em><span>高级筛选</span></div>
+<section>
+  <ul class="sub-l">
+    <li class="current"><span>可投注赛事查询</span></li>
+    <li><a href="#">历史赛事回查</a></li>
+  </ul>
+  <form action="#">
+    <div class="pass long"  id="pass">
+      <div>比赛日期选择</div>
+      <ul class="clearfix">
+        <li class="choice">今天</li>
+        <li>明天</li>
+        <li>周三</li>
+        <li>周四</li>
+        <li>周五</li>
+      </ul>
+      <div>赛事筛选</div>
+      <ul class="clearfix">
+        <li>全选</li>
+        <li>反选</li>
+        <li>热门</li>
+        <li>仅五大联赛</li>
+        <li>友谊赛</li>
+        <li>英超</li>
+        <li>瑞超</li>
+        <li>法甲</li>
+        <li>西甲</li>
+        <li>国王杯</li>
+      </ul>
+    </div>
+    <div class="radio  clearfix" id="radio">
+    <p>排序</p>
+    <ul>
+      <li><em>
+        <input name="" type="hidden" value="0">
+        </em>主胜SP由高大到低 </li>
+      <li><em>
+        <input name="" type="hidden" value="0">
+        </em>主胜sp由高到低 </li>
+      <li><em>
+        <input name="" type="hidden" value="0">
+        </em>让球主胜sp由低到高 </li>
+      <li><em>
+        <input name="" type="hidden" value="0">
+        </em>让球主胜sp由高到低 </li>
+      <li><em>
+        <input name="" type="hidden" value="0">
+        </em>默认排序 </li>
+    </ul>
+    <div class="list"><a href="#"  class="btn-orange">确认</a><a href="#" class="btn-gray">取消</a></div>
+    </div>
+  </form>
+</section>
+<!-----底部-->
+<div id="footer">
+<div class="delete clearfix"> <a href="#"><img src="images/delete.png" width="13">删除</a> (你已经选择8场比赛)<em><a href="#" class="btn-orange">确认</a></em></div>
+  <nav>
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">客户端</a></li>
+      <li><a href="#">存书签</a></li>
+      <li><a href="#">登录</a></li>
+      <li><a href="#">注册</a></li>
+    </ul>
+  </nav>
+  <footer class="clearfix">
+    <ul>
+      <li><a href="#" class="btn">意见反馈</a></li>
+      <li><a href="#top" class="btn">返回顶部</a></li>
+    </ul>
+    <p>Copyright © 2012 粤B2-20070379<br />
+      UC优视 版权所有 </p>
+  </footer>
+</div>
+<script>
+ var radio_em=document.getElementById("radio").getElementsByTagName("em");
+ var radio_li=document.getElementById("radio").getElementsByTagName("li");
+ var radio_li_input=document.getElementById("radio").getElementsByTagName("input");
+ for (var i=0;i<radio_li.length; i++){
+	 +function(i){
+		 radio_li[i].onclick= function(){
+			 for(var j=0;j<radio_li.length;j++){
+				 radio_em[j].className="";
+				 radio_li_input[j].value = 0;
+				 }
+				 radio_em[i].className="s";
+				 radio_li_input[i].value = 1;
+			 }
+		 }(i)
+	 
+	 }
+	 </script>
+<script type="text/javascript" src="js/choice.js"></script>
+<script type="text/javascript" src="js/footer.js"></script>
+</body>
