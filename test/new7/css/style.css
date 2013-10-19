@@ -3351,6 +3351,9 @@ span .markup-red {
 .radio-list li:last-child{
 	margin-right:0px;
 	}
+.amr14 span,.amr14 a{
+	margin-right:14px;
+	}
 /*************************sucx-loc-9-双色球wap改版    冷热遗漏************************************/
 .table-lr{
 	margin-top:10px;
