@@ -13,7 +13,7 @@
 <section>
   <div class="content">
     <div class="dashed">
-    <p class="haoma">118期:<span class="red">15</span><span class="red">17</span><span class="red">18</span><span class="red">21</span><span class="red">29</span><span class="red">32</span><span class="gray">|</span><span class="blue">13</span><em class="more_btn blue" id="more_btn" onclick="document.getElementById('more').style.display = 'none';document.getElementById('more').style.display = 'none';document.getElementById('more').style.display = 'block';">[+更多]</em></p>
+    <p class="haoma">118期:<span class="red">15</span><span class="red">17</span><span class="red">18</span><span class="red">21</span><span class="red">29</span><span class="red">32</span><span class="gray">|</span><span class="blue">13</span><em class="more_btn blue" id="more_btn" onClick="document.getElementById('more').style.display = 'none';document.getElementById('more').style.display = 'none';document.getElementById('more').style.display = 'block';">[+更多]</em></p>
     <div id="more" style="display:none;">
 <p class="haoma">118期:<span class="red">15</span><span class="red">17</span><span class="red">18</span><span class="red">21</span><span class="red">29</span><span class="red">32</span><span class="gray">|</span><span class="blue">13</span></p>
 <p class="haoma">118期:<span class="red">15</span><span class="red">17</span><span class="red">18</span><span class="red">21</span><span class="red">29</span><span class="red">32</span><span class="gray">|</span><span class="blue">13</span></p>
@@ -24,7 +24,7 @@
       <p class="pt10"><span>119</span>期:距截止<span class="red">31</span>时<span class="red">15</span>分</p>
   </div>
   <div class="title_sub amr14"><span>矩阵缩水</span><a href="#">冷热遗漏</a><a href="#">幸运购彩</a><a href="#">走势图表</a></div>
-  <table class="table-help textcenter table-lr">
+  <table class="table-help textcenter table-lr" id="hot_red">
     <tr>
       <th class="red" rowspan="2">红球</th><th rowspan="2">遗漏</th><th colspan="3">冷热</th>
     </tr>
@@ -32,7 +32,7 @@
       <td>30期</td><td>50期</td><td>100期</td>
     </tr>
     <tr>
-      <td><i class="red-i">01</i></td><td>6</td><td>7</td><td>8</td><td>20</td>
+      <td><i>01</i></td><td>6</td><td>7</td><td>8</td><td>20</td>
     </tr>
     <tr>
       <td><i>02</i></td><td>6</td><td>7</td><td>8</td><td>20</td>
@@ -128,7 +128,7 @@
       <td><i>33</i></td><td>6</td><td>7</td><td>8</td><td>20</td>
     </tr>
   </table>
-    <table class="table-help textcenter table-lr xuanhao">
+    <table class="table-help textcenter table-lr xuanhao" id="hot_blue">
     <tr>
       <th class="blue" rowspan="2">蓝球</th><th rowspan="2">遗漏</th><th colspan="3">冷热</th>
     </tr>
@@ -136,7 +136,7 @@
       <td>30期</td><td>50期</td><td>100期</td>
     </tr>
     <tr>
-      <td><i class="blue-i">01</i></td><td>6</td><td>7</td><td>8</td><td>20</td>
+      <td><i>01</i></td><td>6</td><td>7</td><td>8</td><td>20</td>
     </tr>
     <tr>
       <td><i>02</i></td><td>6</td><td>7</td><td>8</td><td>20</td>
@@ -246,4 +246,8 @@
 <script type="text/javascript" src="js/race.js"></script>
 <script type="text/javascript" src="js/ball.js"></script>
 <script type="text/javascript" src="js/footer.js"></script>
+<script type="text/javascript">
+fHotsel('hot_red','i','red-i');
+fHotsel('hot_blue','i','blue-i');
+</script>
 </body>

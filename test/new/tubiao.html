@@ -4,18 +4,18 @@
 <meta http-equiv="content-type"  content="text/html; charset=utf-8" />
 <meta http-equiv="Cache-Control" content="no-cache" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
-<meta name="MobileOptimized" content="320"/>
+<meta name="MobileOptimized" content="480"/>
 <title>雀彩</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="path"><em><a href="main.html">雀彩</a></em><em><a href="#">双色球</a></em><span>走势图</span><i><a href="#">充值</a></i></div>
 <section> 
-  <div class="content clearfix">
+  <div style="padding:10px 0 10px 5px;">
     <p>可通过左右滑动球区看不同区走势</p>
-    <div class="tables">
+    <div class="clearfix tables">
       <div class="left-table">
-        <table cellpadding="0" cellspacing="0" class="table-help table-left textcenter">
+        <table cellpadding="0" cellspacing="0" class="table-left textcenter">
         <tr><td>期号</td></tr>
         <tr><td>109期</td></tr>
         <tr><td>110期</td></tr>
@@ -29,8 +29,8 @@
         <tr><td>118期</td></tr>
         </table>
       </div>
-      <div class="right-table">
-        <table cellpadding="0" cellspacing="0" class="table-help table-right">
+      <div class="right-table" id="right_table">
+        <table cellpadding="0" cellspacing="0" class="table-right" id="slip">
           <tr>
             <th>01</th>
             <th>02</th>
@@ -595,15 +595,16 @@
         </table>
       </div>
       <!--end of right-table-->
-      <p>119期:距截止<span class="red">31</span>时<span class="red">15</span>分</p>
+     
     </div>
+     <p>119期:距截止<span class="red">31</span>时<span class="red">15</span>分</p>
     <!--end of tables--> 
   </div>
   <!--end of content-->
   <div class="content">
     <div class="xuanhao">红球：
       <input class="input-red" type="text" value="" placeholder="如0205061220">
-      <span class="jixuan" onclick="#">机选
+      <span class="jixuan" onClick="#">机选
       <div class=" msg-arrow jixuanarrow"></div>
       </span></div>
     <div>蓝球：
@@ -673,4 +674,19 @@
 <script type="text/javascript" src="js/race.js"></script> 
 <script type="text/javascript" src="js/ball.js"></script> 
 <script type="text/javascript" src="js/footer.js"></script>
+<script type="text/javascript" src="js/slip-min.js"></script>
+<script type="text/javascript">
+var oClientwidth = document.documentElement.clientWidth - 75;
+//document.getElementById("right_table").style.width = oClientwidth +"px";
+var core = document.getElementById("slip");
+var oLis = document.getElementById("slip").getElementsByTagName("th");
+var oWidth = 20*oLis.length;
+document.getElementById("slip").style.width = oWidth +"px";
+slip('px', core, {
+     direction: 'x',   // 设置滑动方向,"x"为横向滑动，默认为纵向滑动。
+     no_bar: true,  // 是否启用模仿滚动条，true为不启用，默认启用
+     wide_high: oWidth,  // 滑动元素的宽度或者高度，单位为px（横向滑动时传递宽度，纵向滑动时传递高度），更详细请看下文
+     bar_css: "height:2px;background-color: rgba(195, 157, 76, 1);"  // 自定义滚动条的样式
+});
+</script>
 </body>
