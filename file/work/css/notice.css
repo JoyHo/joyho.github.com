@@ -1,0 +1,30 @@
+/*css document*/
+body { }
+a{ color:#808080;} a:visited { color:#808080;}
+.main {..............................}
+.main { position:relative; z-index:10; width:960px; margin:auto;font:12px 黑体;}
+.main h1 {margin-left: 50px; background:url('../img/h1_bg.png')  7px 34px  no-repeat; font:16pt 微软雅黑; letter-spacing: 6px;	font-weight:normal; line-height:40px; color:#0c7bc1; }
+.main .location { margin-left:100px; margin-bottom:20px; font:14px Courier,宋体;}
+.main .location a{ margin :0 15px 0 10px; font-size:12px;}
+
+.main .col2 { display:inline;  position:relative; z-index:100; float:left; width:650px; height:auto!important;  height:500px;  min-height:500px;   margin-left:100px;  background:#fff; border-left:solid 1px #e4e4e4;  border-right:solid 1px #e4e4e4;  border-bottom:solid 1px #e4e4e4; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; -moz-box-shadow:0px 3px 5px #8b8b8b ;-webkit-box-shadow:0px 3px 5px #8b8b8b; box-shadow:0px 3px 5px #8b8b8b; opacity:0.90;}
+.main .col2 h2 { margin:0 10px; margin-top:20px; padding:0 10px; font:20pt 黑体; line-height:1.8em; text-align:center;}
+.main .col2 h2 span { float:right; margin-top:20px; font-size:14px; line-height:18px;}
+.main .col2 .message_box { overflow:hidden; clear:both; min-height:200px; margin:5px 30px; padding:15px 0; border-top:dashed 2px #656565; }
+
+
+.main .col2 .ch_page { float:right; margin-right:30px;}
+.main .col2 .ch_page li{ float:left; font-size:20px; color:#ff8530; margin-right:20px;}
+.main .col2 .ch_page a.now_page { color:#ff8530;}
+
+
+
+.main .col2 .ie_bottom_right { width:642px; }
+
+.main .col1 { float:right; height:500px;  width:16%;}
+.main .col1 h1 { margin:auto;}
+.main .col1 span { float:left; width:45px; height:30px; margin:10px 0; background:url('../img/index_icon.png') no-repeat; line-height:30px;}
+.main .col1 span#tel { background-position:0px -332px;}
+.main .col1 span#mail { background-position:0px -299px;}
+.main .col1 p { clear:left; margin-left:20px; }
+

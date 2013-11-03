@@ -1,0 +1,32 @@
+@charset "utf-8";
+.header { .........................}
+.header  { height:100px; min-width:720px; background:url('../img/header_bg.png') left bottom repeat-x;}
+.header .in_header { width:70%; min-width:960px; margin: auto; }
+.header img.logo { float:right; margin: 15px 30px 0 0;}
+.header .float_tree { position:absolute; top:0px; left:14%; z-index:100; width:278px; height:174px; background:url('../img/tree.png');
+}
+
+
+.main_contant {....................... }
+.main_contant { overflow:hidden; width:1024px; margin:auto;}
+
+.left { float:left; width:50%; padding:45px 0 0 50px;  }
+.left div.img_box { width:420px;}
+.left div.img_box img { float:left; margin: 0 10px 10px 0;}
+
+.right { float:right; width:40%; height:460px; margin:20px 0; border-left:dashed 2px #cdcdcd;}
+.right a { font-size:12px; text-decoration:underline;  color:#008fea; line-height:30px;}
+.right a:visited { color:#008fea;}
+.right .sign  { position:relative; top:80px; left:40px; width:300px; height:250px;background:#f2f2f2; border-radius:5px; -moz-border-radius:5px; border:solid 1px #e0e0e0;}
+.right .sign .qiaoguang { position:absolute; top:-7px; left:55px;}
+.right .sign .sign_box { padding-top:50px; padding-left:30px;}
+.right .sign .sign_box span { display:block; height:28px;  font: 12px 宋体;  color:#008fea; }
+.right .sign .sign_box span#name_alert,span#password_alert,span#code_alert { color:#000; margin-left:55px;}
+.right .sign .sign_box span label { float:left; width:55px; font: 14px 宋体; font-weight:bolder;  line-height:28px;}
+.right .sign .sign_box input { height:25px; border-top:solid 1px #a0a0a0; line-height:25px;}
+.right .sign .sign_box input#code { width:50px;}
+.right .sign .sign_box input.submit {border:none; margin-left:55px;}
+.right .sign .sign_box a.login { float:right; margin-right:50px; font-size:14px;}
+
+
+.right p#warn { display:none; position: relative; top: 110px; text-indent: 2em; width: 250px; margin: auto;}

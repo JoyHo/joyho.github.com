@@ -7,7 +7,7 @@
 			var x =parseInt(10+ e.pageX);
 			var y =parseInt(10+ e.pageY);
 			var src_length =parseInt(this_src.length)-4;
-			big_pic.html("<img src='"+this_src.substring(0,src_length)+"_big"+this_src.substring(src_length)+"'style='width:500px;height:500px;' />");
+			big_pic.html("<img src='"+this_src.substring(0,src_length)+"_big"+this_src.substring(src_length)+"' />");
 			big_pic.css({"display":"block","left":x+"px","top":y+"px"});
 			})
 			  .delegate('li','mouseout',function(){
@@ -15,4 +15,4 @@
 				      });
 		}
 	}
-$(show_pic.display_pic())
+$(show_pic.display_pic());

@@ -1,0 +1,36 @@
+/*css document*/
+body { }
+a{ color:#808080;} a:visited { color:#808080;}
+.main {..............................}
+.main { position:relative; z-index:10; width:960px; margin:auto;font:12px 黑体;}
+.main h1 {margin-left: 50px; background:url('../img/h1_bg.png')  7px 34px  no-repeat; font:16pt 微软雅黑; letter-spacing: 6px;	font-weight:normal; line-height:40px; color:#0c7bc1; }
+.main .location { margin-left:100px; margin-bottom:20px; font:14px Courier,宋体;}
+.main .location a{ margin :0 15px 0 10px; font-size:12px;}
+
+.main .col2 {  display:inline;  position:relative; z-index:100; float:left; width:700px; height:auto!important;  height:500px;  min-height:500px;   margin-left:50px;  background:#fff; border-left:solid 1px #e4e4e4;  border-right:solid 1px #e4e4e4;  border-bottom:solid 1px #e4e4e4; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; -moz-box-shadow:0px 3px 5px #8b8b8b ;-webkit-box-shadow:0px 3px 5px #8b8b8b; box-shadow:0px 3px 5px #8b8b8b; opacity:0.90;}
+.main .col2 .ch_page {float:right; margin-bottom:15px;}
+.main .col2 .ch_page li{ float:left; color:#000; margin-right:10px;}
+.main .col2 .ch_page a.now_page { padding:4px; background:#00bff3; color:#fff;}
+.main .col2 .ch_page a.prev,.main .col2 .ch_page a.next { text-decoration:underline; color:#019cd6;}
+
+.main .col2 .message_box { overflow:hidden; clear:both; margin:5px; padding-top:10px; }
+.main .col2 .message_box h2 { padding:0 10px; background:#e5f2f7; font:16pt 楷体; line-height:1.6em;}
+.main .col2 .message_box h2 span { float:right; font-size:12px; color:#808080;}
+.main .col2 .message_box .message_contant { overflow:hidden; margin:5px 15px; padding:0 10px; border-bottom:solid 1px #cccccc;}
+.main .col2 .message_box .message_contant span.publisher { color:#808080; line-height:3em;}
+.main .col2 .message_box .message_contant span.publish_time { float:right;}
+.main .col2 .message_box .message_contant p { line-height:16px; letter-spacing:1px;}
+.main .col2 .form_box { clear:both; width:65%; margin:auto; }
+.main .col2 .form_box input { width:50px;}
+.main .col2 .form_box textarea { margin-top:10px; margin-left:0px;}
+.main .col2 .form_box label { float:left; width:50px; margin-right:20px;}
+.main .col2 .form_box button { float:right; width:45px; margin-bottom:20px; border:solid 1px #ff8530; line-height:20px; color:#ff8530; text-align:center;}
+.main .col2 .ie_bottom_right { width:692px; }
+
+.main .col1 { float:right; height:300px;  width:16%;}
+.main .col1 h1 { margin:auto;}
+.main .col1 span { float:left; width:45px; height:30px; margin:10px 0; background:url('../img/index_icon.png') no-repeat; line-height:30px;}
+.main .col1 span#tel { background-position:0px -332px;}
+.main .col1 span#mail { background-position:0px -299px;}
+.main .col1 p { clear:left; margin-left:20px; }
+

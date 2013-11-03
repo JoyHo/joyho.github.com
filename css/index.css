@@ -7,7 +7,7 @@ table td{width:175px;height:35px;line-height:35px;border:1px solid #669999;}
 td.items{font-weight:bold;background:rgb(170, 196, 196);}
 td.ability{text-align:left;line-height:18px;padding:10px;}
 td.project{text-align:left;line-height:18px;padding-top:10px;}
-td.project div{margin:0px;}
+td.project li{margin:0px; list-style-type:decimal;}
 td.project .project_name{font-weight:bold;padding:0px 10px;}
 td.project .project_name span{float:right;}
 td.project .project_description{padding:0px 10px 10px 30px;}

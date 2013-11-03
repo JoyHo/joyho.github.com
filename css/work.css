@@ -1,6 +1,15 @@
 /* work Document */
 
-.main{width:815px;height:1000px;margin-left:95px;padding-left:105px;background:url(../image/work/paper.jpg)left top repeat;}
+.main{width:815px;margin-left:95px;padding-left:105px;background:url(../image/work/paper.jpg)left top repeat;}
+.main:after{
+	content:"";
+	display:block;
+	width:1px;
+	height:1px;
+	visibility:hidden;
+	clear:both;
+	zoom:1;
+	}
 .main h2{height:39px;color:#000;padding:40px 0 0 0px;margin:0px;}
 .big_pic{background:url(image/work/21.gif) no-repeat center center #fff;position:absolute;z-index:100;border:2px solid #f0f0f0; display:none; top:0px; left:0px;}
 .work_list{width:630px;}

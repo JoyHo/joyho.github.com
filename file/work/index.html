@@ -1,0 +1,177 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/header.css" type="text/css" rel="stylesheet" />
+<link href="css/index.css" type="text/css" rel="stylesheet" />
+<link href="css/reset.css" type="text/css" rel="stylesheet" />
+<script language="javascript" src="js/jquery-1.7.2.min.js">
+</script>
+<title>首页</title>
+</head>
+
+<body>
+<div class="header">
+	<ul class="user_box">
+		<li>欢迎回来!</li>
+		<li>张三</li>
+		<li class="score"><span>积分</span>123分</li>
+		<li class="last_li"><a href="#">修改资料</a><a href="#">退出</a></li>
+	</ul>
+	<a href="#" class="index_page">首页</a>
+	<ul	id="navigator">
+		<li class="nav_01"><div class="bg"></div><a href="#">简介</a></li>
+		<li class="nav_02"><div class="bg"></div><a href="#">销售必备</a></li>
+		<li class="nav_03"><div class="bg"></div><a href="#">通知公告</a></li>
+		<li class="nav_04"><div class="bg"></div><a href="#">销售龙虎榜</a></li>
+		<li class="nav_05"><div class="bg"></div><a href="#">成功案例分享</a></li>
+	</ul>
+	<!--导航这里基本没有怎么改 ，就是每一个里要加上上面的1~5的class。所以其他页面那里也要加上这些class，需注意。然后其他的改是在header.css跟header.js上面。-->
+</div>
+<div class="main">
+	<div class="row1">
+		<div class="box1">
+			<span class="index_icon"></span>
+			<h1>积分排行榜</h1>
+			<div class="ranking_div">
+				<ul class="ranking_head">
+					<li class="on_select">积分排行榜</li>
+					<li>游戏排行榜</li>
+					<li>测试排行榜</li>
+				</ul>
+				<ul id="integral" class="ranking">
+					<li><span class="place three">01.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place three">02.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place three">03.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">04.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">05.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">06.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">07.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">08.</span><span class="name">张三</span><span class="score">100分</span></li>
+				</ul>
+				<ul id="game" class="ranking">
+					<li><span class="place three">01.</span><span class="name">赵六</span><span class="score">100分</span></li>
+					<li><span class="place three">02.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place three">03.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">04.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">05.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">06.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">07.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">08.</span><span class="name">张三</span><span class="score">100分</span></li>
+				</ul>
+				<ul id="test_score" class="ranking">
+					<li><span class="place three">01.</span><span class="name">吴齐</span><span class="score">100分</span></li>
+					<li><span class="place three">02.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place three">03.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">04.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">05.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">06.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">07.</span><span class="name">张三</span><span class="score">100分</span></li>
+					<li><span class="place">08.</span><span class="name">张三</span><span class="score">100分</span></li>
+				</ul>
+			</div>
+		</div><!--end of box1-->
+		<div class="box2">
+			<div id="img_box">
+					<img src="img/index_img/img01.jpg" id="first_img"/>
+					<img src="img/index_img/img02.jpg" />
+					<img src="img/index_img/img03.jpg" />
+					<img src="img/index_img/img04.jpg" />
+					<img src="img/index_img/img05.jpg" />
+			</div>
+			<div id="change_img">
+			<button value="0" ></button>
+			<button value="1"></button>
+			<button value="2"></button>
+			<button value="3"></button>
+			<button value="4"></button>
+			</div>
+		</div><!--end of box2-->
+	</div><!--end of row1-->
+	<div class="row2">
+		<div class="left_side">
+			<span class="index_icon"></span>
+			<h1>销售必备</h1>
+			<ul>
+				<li class="li01"><span>1</span><a href="#">学习园地</a></li>
+				<li class="li02"><span>2</span><a href="#">产品推广工具</a></li>
+				<li class="li03"><span>3</span><a href="#">咨询速递</a></li>
+				<li class="li04"><span>4</span><a href="#">自我测试</a></li>
+			</ul>
+			<!-- 这里也有改动，改动的也是每个Li加上一个class -->
+		</div><!--end of left_side-->
+		<div class="right_side">
+			<div class="row2_1">
+				<div class="col1">
+					<span class="index_icon"></span>
+					<h1>最新留言</h1>
+					<ul>
+							<li>
+								<span>2012.12.4</span>
+								<a href="#"> 如何推销产品，击败其他竞争对手产品 </a>
+							</li>
+							<li>
+								<span>2012.12.4</span>
+								<a href="#"> 如何推销产品，击败其他竞争对手产品，赢得成功！ </a>
+							</li>
+							<li>
+								<span>2012.12.4</span>
+								<a href="#"> 如何推销产品，击败其他竞争对手产品 </a>
+							</li>
+							<li>
+								<span>2012.12.4</span>
+								<a href="#"> 如何推销产品，击败其他竞争对手产品，赢得成功 </a>
+							</li>
+					</ul>
+					<a href="#" id="more_message"> 其他留言</a>
+				</div><!--end of col1-->
+				<div class="col2">
+					<span class="index_icon"></span>
+					<h1>最新咨询</h1>
+					<ul>
+							<li>
+								<span>2012.12.4</span>
+								<a href="#">张三连续3年销售龙虎榜第一的经验分享 </a>
+							</li>
+							<li>								
+								<span>2012.12.4</span>
+								<a href="#">张三连续3年销售龙虎榜第一的经验分享 </a>
+							</li>
+							<li>
+								<span>2012.12.4</span>
+								<a href="#">张三连续3年销售龙虎榜第一的经验分享 </a>
+							</li>
+					</ul>
+				</div><!--end of box1-->
+				<!-- 这里的改动主要是排榜，每个块里面具体内容没怎么改变，主要是css的改动 -->
+			</div><!--end of row2_1-->
+			<div class="row2_2">
+				<div class="col1">
+					<h1>联系方式</h1>
+					<span id="tel">020-2612549</span>
+					<span id="mail">qiaoguangkalu@163.com</span>
+				</div><!--end of col1-->
+				<div class="col2">
+					<h1>轻松一刻</h1>
+					<img src="img/game_icon.png" />
+					<img src="img/game_icon.png" />
+					<img src="img/game_icon.png" />
+				</div><!--end of col2-->
+			</div><!--end of row2_2-->
+		</div><!--right_side-->
+	</div><!--end of row2-->
+	<div class="footer">
+		<div class="footer_flash">
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"  width="200" height="150">
+		  <param name="movie" value="flash/footer.swf" />
+		  <param name="quality" value="high" />
+		  <param name="wmode" value="transparent" />
+		  <embed src="flash/footer.swf" wmode="transparent" quality="high" width="200" height="150"></embed>
+		</object>
+		</div>
+	</div>
+</div><!--end of main-->
+<script language="javascript" src="js/header.js">
+</script>
+</body>
+</html>
