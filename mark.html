@@ -4,9 +4,16 @@
     <meta charset="gb2312" />
     <meta name="Keywords" content="何燕珠，前端开发" />
     <meta name="Description" content="何燕珠，前端开发" />
-    <script src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="js/googledock.1.0.0.js"></script>
     <title>我的标签</title>
+    <!--[if IE 6]> 
+    <script src="js/DD_belatedPNG_0.0.8a-min.js"></script> 
+    <script type="text/javascript"> 
+    //png图片兼容处理
+    DD_belatedPNG.fix('.logo img'); 
+    </script> 
+    <![endif]--> 
     <link href="image/me.ico" rel="shortcut icon"type="image/png" />
     <link href="css/top.css" rel="Stylesheet" type="text/css" media="screen" />
     <link href="css/mark.css" rel="stylesheet" type="text/css" media="screen" />
@@ -36,10 +43,6 @@
   </div><!--end of top-->
   <div class="main">
      <h2>我的标签</h2>
-	 <div class="android_app">
-     <img src="image/myapp.png" alt="android app" />
-	 <p>Mobile(android)下载</p>
-  </div><!--end of android_app-->
      <div class="main_content">
          <ul class="list">
    <li>
@@ -129,20 +132,6 @@
 </ul>
      </div><!--end of main_content-->
   </div><!--end of main-->
-  <div class="bottom">
-  <a href="sf.htm">子弹追踪</a>
-  </div><!--end of bottom-->
-  <!--<script>
-   function shake(){
-      var nav = $('.mark_nav:eq(0)');
-	  var  ul = nav.find('ul').eq(0);
-	  ul.delegate('a','click',function(e){
-	     e.preventDefault();
-		 nav.addClass('animated hinge');
-	  });
-   }
-   shake();
-  </script>-->
   <script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>

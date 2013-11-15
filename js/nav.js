@@ -1,12 +1,11 @@
 ﻿$(document).ready(
 		function () {
-			if(window.ActiveXObject){
+			if($.browser.msie){
 			var nav = $('.nav').eq(0).css('left','100px');
-			var dock = $('a.dock_item');
-			var dock_container = $('.dock_container').eq(0);
-			dock_container.removeClass('dock_container');
-			dock.removeClass('dock_item');
-			dock.addClass('dock');
+			var dock_item = $('.dock_container a');
+            dock_item.each(function(){
+            	this.className = 'dock';
+            });
 			}
 			else
 		    {

@@ -12,6 +12,4 @@ a.dock_item{display:block;font:bold 12px Arial, Helvetica, sans-serif;width:100p
 /*IE*/
 .dock{display:block;float:left;margin-right:10px;width:60px;height:60px;font-size:12px;color:#000;font-weight:bold;border:none;text-decoration:none;text-align:center;}
 .dock img{width:60px;height:60px;border:none;}
-
-.android_app{position:fixed;top:50%;right:80px;}
-.android_app p{font-weight:bold;font-size:14px;color:#6699CC;}
+.dock span{font-weight: normal;}

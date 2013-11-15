@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style type="text/css">
+.mapsearch{width:500px;height: 600px;margin:auto;position:relative;}
+#allmap {width:500px;height:500px;overflow: hidden;}
+p{}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=FAdad6310be4581f31f68f4275238e17 "></script>
+<title>百度地图</title>
+</head>
+
+<body>
+<div class="mapsearch">
+<p>
+周边查询：
+<input class="near"  type="checkbox" value="楼盘" onClick="searchcheck(this)"/>周边楼盘
+<input class="near"  type="checkbox" value="交通车站" onClick="searchcheck(this)"/>交通车站
+<input class="near"  type="checkbox" value="餐饮" onClick="searchcheck(this)"/>餐饮
+<input class="near"  type="checkbox" value="银行" onClick="searchcheck(this)"/>银行
+<input class="near"  type="checkbox" value="学校" onClick="searchcheck(this)"/>学校
+<input class="near"  type="checkbox" value="医院" onClick="searchcheck(this)"/>医院
+</p>
+<div id="allmap"></div>
+</div>
+<script type="text/javascript">
+window.onerror=function(){return true;}
+var map = function(){
+    var m = new BMap.Map('allmap');
+	  m.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件
+      m.addControl(new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}));  //右上角，仅包含平移和缩放按钮
+      m.addControl(new BMap.NavigationControl({anchor: BMAP_ANCHOR_BOTTOM_LEFT, type: BMAP_NAVIGATION_CONTROL_PAN}));  //左下角，仅包含平移按钮
+      m.addControl(new BMap.NavigationControl({anchor: BMAP_ANCHOR_BOTTOM_RIGHT, type: BMAP_NAVIGATION_CONTROL_ZOOM}));  //右下角，仅包含缩放按钮
+	  m.enableScrollWheelZoom(true);
+	  return m;
+}
+var mapobj = {
+   point:function(long,lati){
+      var p = new BMap.Point(long,lati);
+	  return p;
+   },
+   center:function(map,p){
+      map.centerAndZoom(p,15);
+   },
+   marker:function(map,p){
+       var mr = new BMap.Marker(p);
+	   map.addOverlay(mr);
+	   return mr;
+   },
+   infoWindow:function(info,mr){
+       var opt = {enableMessage:false};
+	   var iw= new BMap.InfoWindow(info,opt);  // 创建信息窗口对象
+	   mr.openInfoWindow(iw);
+	   mr.addEventListener('click',function(){this.openInfoWindow(iw);},false);
+   },
+   searchNearby:function(map,p,items){
+       var local = new BMap.LocalSearch(p, {
+            renderOptions:{map:map, autoViewport:true}
+       });
+	   local.searchNearby(items,p);
+   },
+   init:function(map,point,info){
+     this.center(map,point);//创建地图中心
+     var marker = this.marker(map,point);//创建标注点
+	 marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+	 var this_info = "<span style='font-size:16px;font-weight:600;position:relative;top:15px'><center>"+info+"</center></span>";
+     this.infoWindow(this_info,marker);//创建标注点的信息窗口
+	 
+	 //下面是预先加载周边搜索结果，但不显示出来
+	 var local = new BMap.LocalSearch(point, {
+          renderOptions:{autoViewport:true}
+     });
+     local.searchNearby(searchitems,point);
+	 local.setSearchCompleteCallback(function () {
+                var item = local.getResults();
+				for(var i=0;i<item.length;i++){
+				    nearpoints[i] = new Array();
+					nearmarkers[i] = new Array();
+					for(var j=0;j<item[i].getCurrentNumPois();j++){
+					   nearpoints[i][j] = item[i].getPoi(j);
+					   nearmarkers[i][j] = new BMap.Marker(new BMap.Point(item[i].getPoi(j).point.lng,item[i].getPoi(j).point.lat));
+					}
+				}//for i 
+            });
+	 
+   }//end of init
+}
+
+var searchcheck = function(obj){
+      var num,info;
+	  switch(obj.getAttribute('value')){
+	      case "楼盘":num=0;break;
+		  case "交通车站":num=1;break;
+		  case "餐饮":num=2;break;
+		  case "银行":num=3;break;
+		  case "学校":num=4;break;
+		  case "医院":num=5;break;
+		  default:num = null;break;
+	  }
+      if(obj.checked){
+	    for(var i=0;i<nearmarkers[num].length;i++){	
+		   info ="<span style='font-weight:600;font-size:14px'>"+ nearpoints[num][i].title+"</span><a style='margin-left:10px;font-size:12px;color:blue;text-decoration:none;' href='"+nearpoints[num][i].url+"' target='_blank'>详情>></a><span style='font-size:12px;margin-top:10px;display:block;'>地址："+nearpoints[num][i].address+"</span>";
+		    mapobj.infoWindow(info,nearmarkers[num][i]);
+		   allmap.addOverlay(nearmarkers[num][i]);       
+		   
+	    }
+     }
+	 else{
+	 for(var j=0;j<nearmarkers[num].length;j++){
+	      allmap.removeOverlay(nearmarkers[num][j]);
+	    }
+	 }
+	
+}
+
+
+var allmap = map();
+var searchitems = ['楼盘','交通车站','餐饮','银行','学校','医院'];
+var nearpoints = [];//存放了周边搜索结果,数据类型是getPoi的返回值
+var nearmarkers = [];//存放周边搜索的标注点，数据类型是marker
+var point = mapobj.point(114.059115,22.543839);
+window.onload = function(){
+   mapobj.init(allmap,point,'新华保险大厦');
+}
+
+
+
+</script>
+</body>
+</html>
