@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>常用函数</title>
+  <meta name="Keywords" content="与我联系" />
+  <meta name="Description" content="与我联系" />
+  <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+  <script type="text/javascript" src="js/googledock.1.0.0.js"></script>
+    <!--[if IE 6]> 
+    <script src="js/DD_belatedPNG_0.0.8a-min.js"></script> 
+    <script type="text/javascript"> 
+    //png图片兼容处理
+    DD_belatedPNG.fix('.logo img'); 
+    </script> 
+    <![endif]--> 
+  <link href="image/me.ico" rel="shortcut icon"type="image/png" />
+  <link href="css/top.css" rel="Stylesheet" type="text/css" media="screen" />
+  <link href="css/repository.css" rel="Stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div class="top">
+  <div class="logo"><img src="image/mylogo.png" alt="何燕珠--前端开发" /></div>
+  <div class="nav">
+    <div class="dock_container">
+      <a class="dock_item" href="index.html"><span>我的首页</span><img src="image/dock/home.png" alt="我的首页" /></a>
+      <a class="dock_item" href="work.html"><span>我的作品</span><img src="image/dock/portfolio.png" alt="我的作品" /></a>
+      <a class="dock_item" href="mark.html"><span>我的经验</span><img src="image/dock/history.png" alt="我的经验" /></a>
+      <a class="dock_item" href="book.html"><span>我的书架</span><img src="image/dock/book.png" alt="我的书架" /></a>
+      <a class="dock_item" href="index.html"><span>我的简历</span><img src="image/dock/calendar.png" alt="我的简历" /></a>
+      <a class="dock_item" href="contact.html"><span>与我联系</span><img src="image/dock/email.png" alt="与我联系" /></a>
+    </div>
+  </div><!--end of nav-->
+  </div><!--end of top-->
+  <div class="main">
+     <h2>与我联系</h2>
+	 <div class="contact_content">
+        <ul class="repository">
+          <li>
+            <span class="jsitems">兼容的（绑定或取消）事件处理器</span>
+            <pre>
+<b>延迟加载版本:</b>
+function addHandler(target,eventType,handler){//事件绑定
+  if(target.addEventListener){
+    addHandler = function(target,eventType,handler){
+      target.addEventListener(eventType,handler,false);
+    };
+  }
+  else{//IE
+    addHandler = function(target,eventType,handler){
+      target.attachEvent("on"+eventType,handler);
+    };
+  }
+}
+
+function removeHandler(target,eventType,handler){//取消事件绑定
+  if(target.removeEventListener){
+    removeHandler = function(target,eventType,handler){
+      target.removeEventListener(eventType,handler,false);
+    };
+  }
+  else{//IE
+    removeHandler = function(target,eventType,handler){
+      target.detachEvent("on"+eventType,handler);
+    };
+  }
+}
+
+<b>条件预加载版本：</b>
+var addHandler = document.body.addEventListener?
+                 function(target,eventType,handler){
+                  target.addEventListener(eventType,handler,false);
+                 }:
+                 function(target,eventType,handler){
+                  target.attachEvent("on"+eventType,handler);
+                 };
+
+var removeHandler = document.body.removeEventListener?
+                    function(target,eventType,handler){
+                      target.removeEventListener(eventType,handler,false);
+                    }:
+                    function(target,eventType,handler){
+                      target.detachEvent("on"+eventType,handler);
+                    };
+            </pre>
+          </li>
+          <li>
+            <span class="jsitems">为数组元素添加样式</span>
+            <pre>
+function arrayAddClass(obj,class){
+  for(var i=0;i < obj.length;i++){
+    +function(i){
+      obj[i].onclick = function(){
+       if(obj[i].className == ""){obj[i].className = class;}
+       else{obj[i].className = "";}
+      }
+    }(i);
+  }
+}
+            </pre>
+          </li>
+          
+        </ul>
+	 </div><!--end of contact_content-->
+  </div><!--end of main-->
+<script type="text/javascript" src="js/nav.js"></script>
+<script>
+$(function(){
+  $('.jsitems').each(function(){
+    $(this).click(function(){
+      var toggleTarget = $(this).next('pre');
+      toggleTarget.toggle(200);
+    });
+  });
+}());
+</script>
+</body>
+</html>
