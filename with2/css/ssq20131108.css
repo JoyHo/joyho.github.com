@@ -1,0 +1,1125 @@
+@charset "utf-8";
+/********add by heyz 20131016**********/
+/**************chenmt-loc-9-高频彩聚合页************/
+.clo4 ul li {
+	width: 25%;
+	margin-right: 0px;
+	padding-right: 7px;
+	margin-bottom: 12px;
+	background-color: #f0f0f0;
+}
+.clo4 li a {
+	width: auto;
+	min-width: 68px;
+	font-size: 14px;
+}
+.clo3-3 ul li {
+	width: 33.33%;
+}
+.bottom10 {
+	line-height: 16px;
+	padding-top: 0px;
+}
+.bottom10 p {
+	padding-bottom: 10px;
+}
+.bottom10 p:last-child {
+	padding-bottom: 0px;
+}
+/****************sucx-loc-9-双色球wap改版 点选 **********************/
+.ball_blue_second {
+	padding-top: 0px;
+}
+.ball_blue_second ul {
+	margin-top: 0px;
+}
+.title_sub_reset {
+	color: #666;
+}
+.title_sub_reset i {
+	font-style: normal;
+}
+.title_sub_reset em {
+	margin-top: -1px;
+}
+.title_sub_reset em a {
+	border: 1px solid #f0c569;
+	background: #fff8ea;
+	color: #505050 !important;
+	padding: 3px 5px 2px 5px;
+}
+.haoma {
+	line-height: 16px !important;
+	padding-bottom: 9px !important;
+}
+.content .pt10 {
+	line-height: 16px;
+	padding-top: 10px;
+}
+/****************sucx-loc-9-双色球wap改版 非站内入口使用 **********************/
+.solid {
+	border-bottom: 1px #f0f0f0 solid !important;
+}
+.chi1 {
+	padding: 10px;
+	background: none;
+}
+.chi1 img {
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	margin-left: 4px;
+	margin-top: -4px;
+}
+.clo5 ul li {
+	padding-right: 12px;
+}
+.notice .noimg {
+	padding-left: 10px;
+	background-image: none;
+}
+.shenglue p a {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 256px;
+}
+.right {
+	float: right;
+	font-style: normal;
+}
+.header nav {
+	background: #b71313;
+}
+.header nav li {
+	border-right: 1px solid #a10f0f;
+}
+.header nav li a {
+	color: #fed8a7;
+}
+.list-a li:last-child {
+	border-bottom: none;
+}
+.contentp p {
+	padding-left: 0px;
+}
+/*********************sucx-loc-9-双色球wap改版  手输*************************/
+.color666 {
+	color: #666 !important;
+}
+.paddingtop0 {
+	padding-top: 0px;
+}
+.shoushu ul li {
+	padding-bottom: 10px;
+}
+.shoushu ul li input[type="text"] {
+	-webkit-border-radius: 0px;
+	height: 28px;
+	display: inline-block;
+	width: 56px;
+	border: 1px solid #a5cdf9;
+}
+.shoushu ul li input[type="text"]:first-child {
+	width: 166px;
+	border: 1px solid #ffb7b7;
+	margin-right: 5px;
+}
+.jixuan {
+	position: relative;
+	float: right;
+	display: inline-block;
+	width: 49px;
+	height: 29px;
+	background: #f6f6f6;
+	border: 1px solid #e5e5e5;
+	border-left: none;
+	text-align: center;
+	line-height: 29px;
+	-webkit-border-radius: 5px;
+}
+.jixuanarrow {
+	background-color: #f6f6f6;
+	border: 1px solid #e5e5e5;
+	width: 20px;
+	height: 21px;
+	-webkit-transform: rotate(45deg);
+	-webkit-box-shadow: none;
+	left: -2px;
+	top: 3px;
+	z-index: -1;
+	-webkit-border-radius: 2px 0px 2px 0px;
+}
+.arrow-left {
+	width: 7px;
+	height: 10px;
+	-webkit-transform: rotate(180deg);
+	margin-right: 8px;
+	vertical-align: middle;
+	position: relative;
+}
+/******************sucx-loc-9-双色球wap改版   机选**********************/
+.textcenter {
+	text-align: center;
+}
+.jixuan-qiu {
+	padding: 10px 5px;
+	margin-bottom: 1px;
+}
+.jixuan-qiu:last-child {
+	margin-bottom: 0px;
+}
+.jixuan-qiu input {
+	margin: 0px 5px;
+	border: 1px solid #d4d4d4;
+}
+.bg-pink {
+	background-color: #ffeaea;
+}
+.bg-powerblue {
+	background-color: #e1f7ff;
+}
+.border {
+	border: 1px solid #f0f0f0;
+}
+.block {
+	display: block;
+}
+/******************sucx-loc-9-双色球wap改版   矩阵**********************/
+.radio-list {
+	position: relative;
+}
+.radio-list span {
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+}
+.radio-list ul {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	left: 0px;
+	top: -4px;
+	padding-left: 82px;
+}
+.radio-list li {
+	float: left;
+	margin-right: 19px;
+}
+.radio-list li:last-child {
+	margin-right: 0px;
+}
+.amr14 span, .amr14 a {
+	margin-right: 14px;
+}
+/*************************sucx-loc-9-双色球wap改版    冷热遗漏************************************/
+.table-lr {
+	margin-top: 10px;
+}
+.table-lr th, .table-lr td {
+	background: none;
+	border-style: dashed;
+	width: 63px;
+	vertical-align: middle;
+}
+.table-lr i {
+	font-style: normal;
+	display: inline-block;
+	width: 43px;
+	height: 27px;
+	line-height: 27px;
+	-webkit-border-radius: 4px;
+	background: #f6f6f6;
+	border: 1px solid #e5e5e5;
+}
+.red-i {
+	background: #db3030 !important;
+	border: 1px solid #db3030 !important;
+	color: #fff !important;
+}
+.blue-i {
+	background: #1881f0 !important;
+	border: 1px solid #1881f0 !important;
+	color: #fff !important;
+}
+/******************sucx-loc-9-双色球wap改版   幸运选号*********************/
+.left70 ul {
+	left: 90px;
+}
+.pb0 {
+	padding-bottom: 0px;
+}
+.choose-reset {
+	padding-left: 90px;
+}
+.choose-reset p {
+	margin-bottom: 0px;
+}
+.choose-reset .selects {
+	top: 0px;
+	height: 30px;
+}
+.choose-reset p span {
+	width: 82px;
+	text-align: left;
+}
+.xuanhao {
+	margin-bottom: 10px;
+}
+.radio-list .paddingleft0 {
+	padding-left: 0px;
+}
+/************************sucx-loc-9-双色球wap改版   图表******************************/
+.left-table {
+	width: 70px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+}
+.tables {
+	position: relative;
+	margin-top: 5px;
+	height: 226px;
+}
+.tables p:last-child {
+	margin-top: 10px;
+}
+.right-table {
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 70px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 98;
+	top: 0px;
+	left: 0px;
+}
+.table-left {
+	width: 70px;
+	border-collapse: collapse;
+}
+.table-left th, .table-left td {
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid #cdcdcd;
+	width: 70px;
+	height: 19px;
+	line-height: 19px;
+	text-align: center;
+	font-size: 14px;
+	background: #fff;
+}
+.table-right {
+	width: auto;
+	margin: 0px;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+.table-right td, .table-right th {
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid #cdcdcd;
+	width: 18px;
+	height: 19px;
+	text-align: center;
+}
+.table-right th {
+	line-height: 19px;
+	height: 19px;
+	font-weight: normal;
+	background: #fff;
+}
+.table-right td:nth-child(n+1) {
+	background: #ffeaea;
+}
+.table-right td:nth-child(n+12) {
+	background: #fff;
+}
+.table-right td:nth-child(n+23) {
+	background: #ffeaea;
+}
+.table-right td:nth-child(n+34) {
+	background: #e1f7ff;
+}
+.red-point {
+	width: 19px;
+	height: 19px;
+	display: block;
+	line-height: 19px;
+	border-radius: 9px;
+	background: #db3030;
+	color: #fff !important;
+	font-style: normal;
+	font-size: 12px;
+}
+.blue-point {
+	background: #1881f0;
+}
+.input-red {
+	width: 166px;
+	height: 30px;
+	padding: 0 5px;
+	box-shadow: none;
+	border: 1px solid #ffb7b7;
+}
+.content .tdbordernone {
+	width: auto;
+}
+.content .tdbordernone td {
+	border-bottom: none;
+}
+/*add by heyz*/
+.alert-box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.25);
+	padding: 0 20px;
+	-webkit-box-sizing: border-box;
+}
+.alert-content {
+	margin-top: 50px;
+	width: 100%;
+	background: #fff;
+	padding: 15px 10px;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .55);
+	-webkit-box-sizing: border-box;
+}
+.alert-content p {
+	margin-bottom: 10px;
+	text-align: center;
+	display: -webkit-box;
+}
+.alert-content p:last-child {
+	margin-bottom: 0;
+}
+.alert-content p a {
+	height: 26px;
+	width: 81px;
+	font-size: 14px;
+	line-height: 26px;
+	color: #505050;
+	background: #f6f6f6;
+	display: block;
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 2px;
+	margin-right: 7px;
+	-webkit-box-flex: 1;
+}
+.alert-content p a:last-child {
+	margin-right: 0;
+}
+/******************new add by heyz 20131022***************************/
+.notice-reset p {
+	color: #333 !important;
+	font-size: 14px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+.notice-reset p i {
+	font-style: normal;
+}
+.notice-reset p:first-child {
+	background-position: 11px 12px !important;
+}
+.notice-reset p:first-child span:first-child {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 0px;
+	max-width: 60px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position: relative;
+	top: -1px;
+}
+.notice-reset p:first-child span:last-child {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 0px;
+	max-width: 100px !important;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position: relative;
+	top: -2px;
+}
+.ml6 {
+	margin-left: 6px;
+}
+/********************************************************************/
+
+/*add by xiesw 2013-10-22*/
+.btn-num {
+	margin: 0 3px;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	line-height: 21px;
+	text-align: center;
+	font-size: 21px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eeeeee));
+	border: 1px #dedede solid;
+	border-radius: 4px;
+	vertical-align: middle;
+}
+.ball_red_pop {
+	padding: 10px 10px 0;
+}
+.ball_red_pop i {
+	color: #bababa;
+	font-style: normal;
+}
+.ball_red_pop ul {
+	margin-top: 10px;
+}
+.ball_red_pop li {
+	float: left;
+	background: url(../images/ball.png) no-repeat 0 0;
+	background-size: 31px 116px;
+	display: block;
+	width: 31px;
+	height: 34px;
+	text-align: center;
+	font-weight: bold;
+	color: #F00;
+	margin: 0 8px 10px;
+	line-height: 32px;
+}
+.ball_red_pop li.s {
+	background: url(../images/ball.png) no-repeat 0 -41px;
+	background-size: 31px 116px;
+	color: #fff;
+}
+.ball_blue_pop {
+	padding: 10px;
+}
+.ball_blue_pop i {
+	color: #bababa;
+	font-style: normal;
+}
+.ball_blue_pop ul {
+	margin-top: 10px;
+}
+.ball_blue_pop li {
+	float: left;
+	background: url(../images/ball.png) no-repeat 0 0;
+	background-size: 31px 116px;
+	display: block;
+	width: 31px;
+	height: 34px;
+	text-align: center;
+	font-weight: bold;
+	color: #1180f4;
+	margin: 0 8px 10px;
+	line-height: 32px;
+}
+.ball_blue_pop li.s {
+	background: url(../images/ball.png) no-repeat 0 -82px;
+	background-size: 31px 116px;
+	color: #fff;
+}
+/*******************add by heyz 20131023*****************************/
+.listp p {
+	padding-right: 20px;
+	position: relative;
+}
+.listp p em {
+	font-size: 20px;
+	line-height: 18px;
+	float: none;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -14px;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.ptb5 {
+	padding-top: 5px;
+	padding-bottom: 5px !important;
+}
+.dashed-top {
+	border-top: 1px #f0f0f0 dashed !important;
+}
+/*****************add by heyz 20131024*****************************/
+/**************quecai 1.1.0  用户引导页面*****************/
+.orange-point {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	border-radius: 8px;
+	background: #ffa544;
+	color: #fff !important;
+	text-align: center;
+	line-height: 17px;
+}
+.yindao {
+	background: #f3f3f3;
+}
+.yindao div {
+	padding: 7px 10px;
+	background: #fff;
+}
+.yindao i {
+	margin-right: 9px;
+}
+.pl25 {
+	padding-left: 25px;
+}
+.img-arrow {
+	width: 7px;
+	height: 10px;
+}
+.yindao .next {
+	padding: 5px 10px;
+	background: none;
+}
+.next img {
+	width: 19px;
+	height: 21px;
+}
+.yindao-ad {
+	padding-top: 5px;
+	border-top: 1px dashed #f0f0f0;
+	line-height: 18px;
+}
+.yindao-ad img {
+	width: 16px;
+	height: 13px;
+	margin-right: 9px;
+	margin-top: -1px;
+	vertical-align: middle;
+}
+.create-name {
+	display: block !important;
+	margin-left: -7px;
+}
+.block-delete {
+	position: relative;
+	padding-right: 20px;
+}
+.block-delete em {
+	color: #333;
+	font-style: normal;
+	font-size: 20px;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -10px;
+}
+/******************add by heyz 20131025********************************/
+/***********quecai 1.1.0    支付宝安装支付页面***************/
+.pay-sure {
+	margin: 30px 0px;
+}
+.pay-sure p {
+	width: 194px;
+	padding-left: 50%;
+	margin-left: -97px;
+}
+.pay-sure p a {
+	margin-top: 20px;
+}
+/********************quecai 1.1.0      增加引导入口*******************************/
+.rukou {
+	width: 100%;
+	box-sizing: border-box;
+	background: #b71313;
+	padding: 7px 11px 6px;
+	position: relative;
+	color: #fed8a7;
+	font-size: 14px;
+	border-top: 1px solid #a10f0f;
+	border-bottom: 1px solid #a10f0f;
+	box-shadow: 0px 1px 1px #a10f10 inset;
+}
+.rukou p {
+	line-height: 16px;
+	margin-bottom: 7px;
+}
+.rukou p a {
+	color: #fed8a7;
+	font-size: 14px;
+	line-height: 16px;
+}
+.rukou p img {
+	width: 6px;
+	height: 10px;
+	margin-top: -4px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.rukou p:last-child {
+	margin-bottom: 0px;
+}
+.rukou em {
+	position: absolute;
+	right: 11px;
+	top: 12px;
+}
+.rukou em img {
+	width: 13px;
+	height: 13px;
+}
+/************************quecai1.1.0  注册--没验证码**********************/
+.bg-gray1 {
+	background: #f7f7f7;
+}
+.login-top {
+	height: 110px;
+	text-align: center;
+	color: #aaaaaa;
+	font-size: 14px;
+	padding-top: 21px;
+}
+.login-top p {
+	line-height: 14px;
+}
+.login-logo {
+	width: 67px;
+	height: 66px;
+}
+.login-top img {
+	border: 0;
+	margin-bottom: 8px;
+}
+.login-form {
+	padding-bottom: 18px;
+	margin-top: -10px;
+}
+.login-form p {
+	padding: 0;
+}
+.login-form input[type="text"], .login-form input[type="password"] {
+	height: 45px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #bababa;
+	border: 1px solid #d5d5d5;
+	padding: 14px 0px 14px 42px;
+	border-radius: 0;
+	font-size: 14px;
+}
+.login-form input[type="text"]:last-child {
+	margin-top: -1px;
+}
+.usercount {
+	background: #fff url(../images/usercount.png) no-repeat 11px center;
+	background-size: 23px;
+}
+.userpwd {
+	background: #fff url(../images/userpwd.png) no-repeat 11px center;
+	background-size: 23px;
+}
+.user-error {
+	height: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 10px;
+	font-size: 14px;
+	background: #fff;
+	color: #666666;
+	text-align: center;
+	border: 1px solid #d5d5d5;
+}
+.login-form .user-error {
+	border-bottom: 1px solid #d5d5d5;
+}
+.user-error:after {
+	content: "";
+	width: 6px;
+	height: 6px;
+	display: block;
+	border-top: 1px solid #d5d5d5;
+	border-left: 1px solid #d5d5d5;
+	-webkit-transform: rotate(45deg);
+	position: relative;
+	left: 50%;
+	margin-left: -3px;
+	top: -28px;
+	background: #fff;
+}
+.user-error img {
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	margin-right: 4px;
+	margin-top: -3px;
+}
+.btn-red {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #dd3333;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border: 0;
+	border-radius: 3px;
+	margin-top: 23px;
+	-webkit-appearance: none;
+}
+.mt15 {
+	margin-top: 15px;
+}
+.forget-pwd {
+	float: left;
+	font-size: 14px;
+	line-height: 14px;
+}
+.register-link {
+	float: right;
+	font-size: 14px;
+	line-height: 14px;
+}
+.login-footer {
+	background: #f7f7f7;
+	padding-top: 15px;
+	border-top: 1px solid #e6e5e5;
+}
+/*******************quecai1.1.0  注册**********************/
+.register-logo2 {
+	width: 176px;
+	height: 66px;
+}
+.usersecurity {
+	background: #fff url(../images/security.png) no-repeat 11px center;
+	background-size: 23px;
+}
+.security-code .usersecurity[type="text"] {
+	padding-right: 128px;
+}
+.security-code {
+	position: relative;
+	margin-top: -1px;
+}
+.security-code span {
+	position: absolute;
+	right: 50px;
+	top: 10px;
+}
+.security-code span img {
+	width: 72px;
+	height: 25px;
+}
+.security-code a {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 12px;
+	line-height: 14px;
+}
+/*****************add by xiefei 20131101*****************/
+.title_sub a.font-red {
+	float: right;
+	font-size: 14px;
+	color: #f4232b !important;
+	margin-right: 4px;
+}
+.lost-table th {
+	font-size: 16px;
+	background: transparent;
+	color: #aaa;
+}
+.lost-table tr td.on {
+	background: #f0f0f0;
+}
+.w5col ul {
+	padding: 10px 10px 0;
+}
+.w5col ul li {
+	width: 16%;
+	margin-right: 5%;
+}
+.w5col ul li:last-child {
+	margin-right: 0;
+}
+.w2col ul li {
+	width: 45%;
+	margin-right: 5%;
+}
+.w2col ul li:last-child {
+	margin-right: 0;
+}
+.w4q {
+	padding: 0 9px 10px 9px;
+}
+.w4q ul li {
+	float: left;
+	width: 21%;
+	margin-right: 5%;
+	box-sizing: border-box;
+}
+.w4q ul li:nth-child(4n) {
+	margin-right: 0;
+	width: 22%;
+}
+.w2q {
+	padding: 0 9px 10px 9px;
+}
+.w2q ul li {
+	float: left;
+	width: 47%;
+	margin-right: 6%;
+}
+.w2q ul li:last-child {
+	margin-right: 0;
+}
+/**********************add by heyz 20131106   v1.1.1  11xuan5-modify*************************/
+.kaijiang-title {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding-left: 68px;
+	width: 100%;
+	height: 25px;
+	box-sizing: border-box;
+	border-left: 2px solid #d3d3d3;
+	border-right: 1px solid #d3d3d3;
+	border-top: 1px solid #d3d3d3;
+	background: #f0f0f0;
+}
+.top25 {
+	top: 25px;
+}
+.left-1 {
+	left: -1px;
+}
+.height {
+	height: 44px !important;
+}
+.bg-grayf0f0f0 {
+	background-color: #f0f0f0 !important;
+}
+.th-grayf0f0f0 th {
+	background-color: #f0f0f0;
+}
+.height446 {
+	height: 446px;
+}
+.julijiezhi {
+	position: relative;
+}
+.julijiezhi em {
+	font-style: normal;
+	color: #f4232b;
+}
+.julijiezhi span {
+	width: 35px;
+	height: 21px;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	border: 1px solid #e5e5e5;
+	background: #f6f6f6 url(../images/arrow_fold.png) no-repeat;
+	background-size: 43px 97px;
+	position: absolute;
+}
+.jiezhidown {
+	background-position: 4px -16px !important;
+	right: 52px;
+}
+.jiezhiup {
+	background-position: 4px -65px !important;
+	right: 10px;
+}
+.orange-point {
+	width: 19px;
+	height: 19px;
+	display: block;
+	line-height: 19px;
+	border-radius: 9px;
+	background: #fb7d32;
+	color: #fff !important;
+	font-style: normal;
+	font-size: 12px;
+}
+/***********************雀�?.1.0 手机邮箱注册***********************/
+.mobile:first-child {
+	padding-top: 10px;
+}
+.mobile, .dCaptcha {
+	padding: 0px 10px 10px 10px;
+}
+.mobile p, .sc p {
+	position: relative;
+	padding: 3px 0px 3px 98px;
+}
+.mobile input[type="text"], .sc input[type="text"], .mobile input[type="password"] {
+	width: 100%;
+	height: 30px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #d4d4d4;
+	font-size: 14px;
+}
+.sc input[type="text"] {
+	padding-right: 123px;
+}
+.mobile .red, .sc .red {
+	margin-right: 4px;
+	position: absolute;
+	left: 0px;
+}
+.mobile span:first-child, .sc span:first-child {
+	position: absolute;
+	left: 0px;
+	top: 7px;
+	padding-left: 12px;
+	text-align: justify;
+}
+.letter-spacing15 {
+	letter-spacing: 15px;
+}
+.letter-spacing5 {
+	letter-spacing: 5px;
+}
+.letter-spacing16 {
+	letter-spacing: 16px;
+}
+.sc {
+	position: relative;
+}
+.captchaImg {
+	position: absolute;
+	right: 10px;
+	top: 3px;
+}
+.captchaImg img {
+	width: 70px;
+	height: 23px;
+	vertical-align: middle;
+	margin-top: -13px;
+	margin-right: 4px;
+}
+.captchaImg a {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 14px;
+}
+.dCaptcha p {
+	padding-left: 98px;
+}
+.dCaptcha input[type="button"] {
+	width: 100%;
+	height: 30px;
+	margin-top: 5px;
+	color: #0066ad;
+	font-size: 16px;
+	line-height: 30px;
+	box-sizing: border-box;
+	border: 1px solid #d4d4d4;
+	background: #f5f5f5;
+}
+.codepass {
+	margin-top: 3px;
+	font-size: 14px;
+	display: inline;
+	position: static !important;
+}
+.codepass span {
+	position: static;
+	display: inline-block;
+	width: 46px;
+	height: 18px;
+	line-height: 18px;
+	margin-right: 1px;
+	text-align: center;
+	background: -webkit-gradient(linear, left top, left bottom, from(#e2e2e2), to(#d2d2d2));
+}
+.codepass span:first-child {
+	position: static;
+	padding-left: 0px;
+	text-align: center;
+}
+.blackfont {
+	color: #505050 !important;
+}
+.height30 {
+	height: 30px;
+}
+.plr {
+	padding: 0px 10px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.email p {
+	padding-left: 66px !important;
+}
+.mt5 {
+	margin-top: 5px;
+}
+.font-size14 {
+	font-size: 14px;
+}
+.margin-top-1 {
+	margin-top: -1px;
+}
+.tj {
+	display: inline-block;
+	margin-left: 5px;
+	width: 32px;
+	height: 16px;
+	line-height: 17px;
+	text-align: center;
+	font-size: 9px;
+	background: #d50000;
+	color: #fff;
+	-webkit-border-radius: 2px;
+	position: relative;
+}
+.tj:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	margin-left: 1px;
+	height: 0;
+	left: -9px;
+	top: 4px;
+	border: 4px solid;
+	border-color: transparent #d50000 transparent transparent;
+}
+.mail_win {
+	width: 100%;
+	position: absolute;
+	top: 126px;
+	left: 0px;
+	z-index: 5;
+}
+.maillist {
+	margin: 0 10px 0 76px;
+	background: #fff;
+	border-radius: 0px;
+	border: 1px #d4d4d4 solid;
+	border-bottom: none;
+}
+.maillist li {
+	border-bottom: 1px solid #d4d4d4;
+	line-height: 30px;
+	padding-left: 5px;
+}
+#dMsgSendNotice {
+	padding-left: 107px;
+}
+/****************** add by heyz 20131106 双色球 v1.1.0 dianxuan******************/
+.color-orange {
+	color: #e27c03 !important;
+	border: 1px solid #ffebc1;
+	background: #fff8ea;
+	padding: 1px 8px;
+	text-align: center;
+	border-radius: 3px;
+	font-style: normal;
+}
+.float-right {
+	float: right;
+}
