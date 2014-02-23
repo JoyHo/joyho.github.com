@@ -27,11 +27,11 @@
 <div class="main">
     <div class="left">
 
-<div class="list">
+<div class="list clearfix">
     <div class="list_show">
         <ul>
-            <li><a href="#" target="_blank">化妆及护肤</a></li>
-            <li><a href="#" target="_blank">淘宝</a></li>
+            <li><a href="#" target="_blank">天猫</a></li>
+            <li><a href="sub.html" target="_blank">淘宝推荐</a></li>
         </ul>
     </div>
 </div>
@@ -223,8 +223,50 @@
      
 
     </div>
-    <div style="clear:both"></div>
 
 </div>
+<script type='text/javascript'>
+(function() {
+    var c = document.createElement('script'); 
+    c.type = 'text/javascript';
+    c.async = true;
+    c.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.clicki.cn/boot/50592';
+    var h = document.getElementsByTagName('script')[0];
+    h.parentNode.insertBefore(c, h);
+})();
+</script>
+<script>
+  (function(){
+    var obj = document.getElementById("recommend");
+    var ul = obj.getElementsByTagName("ul")[0];
+    var li = ul.getElementsByTagName("li");
+    var liLen = li.length;
+
+    //设置ul的长度
+    ul.style.width = 950*liLen + "px";
+    ul.style.left = 0 + "px";
+    var ulwidth = ul.style.width;
+
+    //复制一个相同的ul
+    var newul = document.createElement("ul");
+    newul.innerHTML = ul.innerHTML;
+    newul.style.width = ulwidth;
+    newul.style.left = ulwidth;
+    obj.appendChild(newul);
+    
+    //执行运动
+    setInterval(function(){
+          if(ul.style.left == "-"+ulwidth){
+            ul.style.left = ulwidth;
+          }
+          if(newul.style.left == "-"+ulwidth){
+            newul.style.left = ulwidth;
+          }
+           ul.style.left = parseInt(ul.style.left.substring(0,ul.style.left.length-2))-950 + "px";
+           newul.style.left = parseInt(newul.style.left.substring(0,newul.style.left.length-2))-950 + "px";
+    }, 3000)
+
+  })();
+</script>
 </body>
 </html>

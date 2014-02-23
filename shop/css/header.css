@@ -82,12 +82,15 @@ html{
 	padding-right:0px 5px;
 	}
 .tuijian{
+	position:relative;
 	width:950px;
+	height: 360px;
 	overflow: hidden;
 }
 .tuijian ul{
-	width:100000000px;
+	position:absolute;
 	height:360px;
+	left:0;
 }
 .tuijian li{
 	list-style-type:none;
@@ -106,6 +109,8 @@ html{
 	width:100%;
 	padding-top:10px;
 	padding-bottom:10px;
+	font-size:20px;
+	color:#000;
 	text-align: center;
 	background:#fff;
 	opacity:0.5;
