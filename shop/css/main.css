@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+.main{
+	width:950px;
+	height:auto;
+	background-color:#fff;
+	text-align:left;
+	vertical-align:top;
+	margin:0px auto;
+	padding:20px 0;
+	}
+.left{
+	width:230px;
+	height:auto;
+	margin:0px 3px 0px 2px;
+	float:left;
+	}
+.right{
+	width:710px;
+	height:auto;
+	float:right;
+	margin-right:4px;
+	}
+.base{
+	height:125px;
+	width:950px;
+	vertical-align:top;
+	clear:left;
+	}
+.list_show{
+	text-align:left;
+	margin-left:-15px;
+	*margin-left:15px;
+	margin-top:-10px;
+	*margin-top:-20px;
+	}
+.list_show ul{
+	font:bold 13px #505990;
+	list-style-type:none;
+    padding:3px 5px 4px 10px;
+	line-height:25px;
+	margin:0px;
+	vertical-align:top;
+	}
+.list_show li{
+	font:13px;
+	color:#505990;
+	padding-left:23px;
+	background:url(../images/list_show.gif) no-repeat;
+	background-position:4px;
+	}
+.list_show a:link,#list_show a:visited{
+	font-size:12px;
+	color:#505990;
+	text-decoration:none;
+	}
+.list_show a:hover{
+	font-size:12px;
+	color:#AA0000;
+	text-decoration:underline;
+	}
+.login{
+	height:25px;
+	width:710px;
+	font-size:14px;
+	text-align:left;
+	vertical-align:middle;
+	padding-top:20px;
+	}
+.new_goods{
+	width:710px;
+	height:452px;
+	margin-left:5px;
+	}
+.goods_title{
+	background-color:#d9d9d9;
+	height:20px;
+	width:707px;
+	font:"宋体";
+	font-weight:bold;
+	font-size:13px;
+	color:#333;
+	text-align:left;
+	text-indent:12px;
+	vertical-align:middle;
+	padding-top:5px;
+	}
+.goods_main{
+	width:707px;
+    height:432px;
+	padding-left:7px;
+	text-align:center;
+	vertical-align:top;	
+	}
+.goods{
+	width:320px;
+	min-height: 315px;
+	_height:315px;
+	float:left;
+	margin:0px 3px;
+	background-color:#fff;
+    vertical-align: top;
+    display:inline-block;
+    display: -moz-inline-stack;
+    zoom: 1;
+    *display: inline;
+	}
+.goods_pic{
+	margin-top:5px;
+	vertical-align:top;
+	}
+.goods_pic img{
+	width:100%;
+}
+.goods_intro{
+	width:100%;
+	padding:10px 0;
+	font-size:12px;
+	color:#365d86;
+	line-height:18px;
+	text-align:left;
+	}
+a.goods_intro:link{
+	font-size:12px;
+	color:#326084;
+	text-decoration:none;
+	}
+a.goods_intro:visited{
+	font-size:12px;
+	color:#0099ff;
+	text-decoration:none;
+	}
+a.goods_intro:hover{
+	font-size:12px;
+	color:#a17b17;
+	}
+.goods_price{
+	width:170px;
+	height:20px;
+	padding-top:10px;
+	}
+.goods_price_we{
+	font-weight:bold;
+	font-size:17px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-right:10px;
+	color:#aa0000;
+	}
+.footer{
+	font-size:12px;
+	color:#333;
+	background-color:#d9d9d9;
+	text-align:center;
+	vertical-align:middle;
+	height:50px;
+	width:950px;
+	padding-bottom:10px;
+	}

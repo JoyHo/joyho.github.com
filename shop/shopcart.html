@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>购物车页面</title>
+<style>
+*{padding:0;margin:0;}
+body {
+font: 12px normal "宋体";
+font-size: 12px;
+line-height: 22px;
+background-color:#CCC;
+}
+.shopmain{
+	position:relative;
+	margin:100px auto;
+	width:960px;
+	}
+.mycart{
+width: 160px;
+height:30px;
+line-height:30px;
+background: #fa9b01;
+color: #FFF;
+font-size:20px;
+text-align:center;
+}
+.o_g{width:27px;background-position: -27px -43px;}
+.shop_content{
+	color: #666;
+font-weight: bold;
+font-size: 14px;
+display: list-item;
+padding: 20px 0px 10px 0px;
+	}
+.tab_bg{
+	color:#fff;
+	font-size:18px;
+	font-weight:bold;
+	background-color:rgb(102,102,102);
+	}
+#summary, #buy-panel {
+border: 1px solid #dcdfe5;
+border-top: 0px;
+text-align: right;
+padding: 10px 20px;
+}
+#summary span {
+color: #ce1a13;
+font-weight: bold;
+font-family: Arial;
+font-size: 14px;
+margin-right: 20px;
+}
+#buy-panel{text-align:left;}
+#buy-panel a{
+	font-size:16px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#fff;
+	background-color:#fa9b01;
+	padding:7px;
+	
+	}
+.empty{
+	width:100px;
+    position:relative;
+	left:50px;
+}
+.go_buy{
+	width:100px;
+	position:relative;
+	left:440px;
+	}
+.go_pay{
+	width:100px;
+	position:relative;
+	left:500px;
+	}
+.goods_details{
+	text-align:center;
+	font-size:16px;
+	}
+.delete{
+	text-decoration:none;
+	color:#900;
+	font-weight:bold;
+	}
+.quantity_change{
+	margin:0 8px;
+	}
+</style>
+</head>
+<body>
+<div class="shopmain">
+    <h1 class="mycart">我的购物车</h1>
+    <dl class="shop_list">
+                        <dt class="shop_content">购物清单：</dt>
+                        <dd id="noline">
+                            <table width="100%%" border="0" cellspacing="0" cellpadding="0" style="border: 1px solid #dcdfe5">
+                                <thead>
+                                    <tr class="tab_bg">
+                                        <th width="10%">编号</th>
+                                        <th width="34%">商品名称</th>
+                                        <th width="20%">单价</th>
+                                        <th width="10%">数量</th>
+                                        <th width="18%">总价格</th>
+                                        <th width="8%">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                
+                                </tbody>
+                            </table>
+                            <div id="summary">                            
+                              <span class="sumg_next"></span> 产品数量总计：<span class="sumg_count">0</span>购买金额总计：￥<span class="sumprice">0.00</span>
+                            </div>
+                            <div id="buy-panel">
+                                <a class="empty" href="#" onclick="clear_cart()">清空购物车</a> 
+                                <a href="index.html" class="go_buy">继续购物</a>
+                                <a class="go_pay" href="#" onclick="alert('已经结算，感谢惠顾！')">去结算</a>   
+                            </div>
+							
+                        </dd>
+                    </dl>
+</div><!--shopmain-->
+<div id="time"></div>
+<script src="js/cookie.js"></script>
+<script>
+var tbody = document.getElementById('noline').childNodes[1].childNodes[3];
+var tr = TrTemple(goods_array());
+tbody.innerHTML = tr;//向表格中添加商品信息行
+var sum_count = document.getElementsByClassName('sumg_count')[0];//购物车中商品总数
+sum_count.innerHTML=Quantity_total();
+var sum_price = document.getElementsByClassName('sumprice')[0];//购物车中商品总价格
+sum_price.innerHTML=Price_Total();
+
+
+var c = document.cookie;
+document.getElementById('time').innerHTML = c;
+
+
+
+
+</script>
+
+</body>
+</html>
