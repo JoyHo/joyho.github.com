@@ -2,15 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="Keywords" content="�����飬ǰ�˿���" />
-    <meta name="Description" content="�����飬ǰ�˿���" />
+    <meta name="Keywords" content="何燕珠，前端开发" />
+    <meta name="Description" content="何燕珠，前端开发" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="js/googledock.1.0.0.js"></script>
-    <title>�ҵı�ǩ</title>
+    <title>我的标签</title>
     <!--[if IE 6]> 
     <script src="js/DD_belatedPNG_0.0.8a-min.js"></script> 
     <script type="text/javascript"> 
-    //pngͼƬ���ݴ���
+    //png图片兼容处理
     DD_belatedPNG.fix('.logo img'); 
     </script> 
     <![endif]--> 
@@ -29,20 +29,20 @@
 
 <body>
 <div class="top">
-     <div class="logo"><img src="image/mylogo.png" alt="������" /></div>
+     <div class="logo"><img src="image/mylogo.png" alt="何燕珠" /></div>
      <div class="nav">
       <div class="dock_container">
-        <a class="dock_item" href="index.html"><span>�ҵ���ҳ</span><img src="image/dock/home.png" alt="�ҵ���ҳ" /></a>
-      <a class="dock_item" href="work.html"><span>�ҵ���Ʒ</span><img src="image/dock/portfolio.png" alt="�ҵ���Ʒ" /></a>
-      <a class="dock_item" href="mark.html"><span>�ҵľ���</span><img src="image/dock/history.png" alt="�ҵľ���" /></a>
-      <a class="dock_item" href="book.html"><span>�ҵ����</span><img src="image/dock/book.png" alt="�ҵ����" /></a>
-      <a class="dock_item" href="index.html"><span>�ҵļ���</span><img src="image/dock/calendar.png" alt="�ҵļ���" /></a>
-      <a class="dock_item" href="contact.html"><span>������ϵ</span><img src="image/dock/email.png" alt="������ϵ" /></a>
+        <a class="dock_item" href="index.html"><span>我的首页</span><img src="image/dock/home.png" alt="我的首页" /></a>
+      <a class="dock_item" href="work.html"><span>我的作品</span><img src="image/dock/portfolio.png" alt="我的作品" /></a>
+      <a class="dock_item" href="mark.html"><span>我的经验</span><img src="image/dock/history.png" alt="我的经验" /></a>
+      <a class="dock_item" href="book.html"><span>我的书架</span><img src="image/dock/book.png" alt="我的书架" /></a>
+      <a class="dock_item" href="index.html"><span>我的简历</span><img src="image/dock/calendar.png" alt="我的简历" /></a>
+      <a class="dock_item" href="contact.html"><span>与我联系</span><img src="image/dock/email.png" alt="与我联系" /></a>
       </div>
   </div>
   </div><!--end of top-->
   <div class="main">
-     <h2>�ҵı�ǩ</h2>
+     <h2>我的标签</h2>
      <div class="main_content">
          <ul class="list">
    <li>
@@ -72,7 +72,7 @@
 <li>
       <img src="image/mask/01_iron_man_2.jpg" />
       <div class="info">
-        <h3>CSSģ�黯</h3>
+        <h3>CSS模块化</h3>
       </div>
    </li>
    <li>
@@ -96,7 +96,7 @@
    <li>
       <img src="image/mask/02_the_last_airbender.jpg" />
       <div class="info">
-         <h3>��Ӧʽ���</h3>
+         <h3>响应式设计</h3>
       </div>
    </li>
    <li>
@@ -108,7 +108,7 @@
    <li>
       <img src="image/mask/01_iron_man_2.jpg" />
       <div class="info">
-        <h3>���ģʽ</h3>
+        <h3>设计模式</h3>
       </div>
    </li>
    <li>
@@ -126,7 +126,7 @@
    <li>
       <img src="image/mask/02_the_last_airbender.jpg" />
       <div class="info">
-         <h3>ǰ���Ż�</h3>
+         <h3>前端优化</h3>
       </div>
    </li>
 </ul>
