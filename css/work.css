@@ -1,6 +1,6 @@
 /* work Document */
 
-.main{width:815px;height:auto;margin-left:95px;padding-left:105px;background:url(../image/work/paper.jpg)repeat top left;_background-image:url(../image/work/paper.jpg);*background-image:url(../image/work/paper.jpg);background-image:url(../image/work/paper.jpg)\9;padding-bottom:100px;}
+.main{width:815px;height:auto;margin:auto;padding-left:105px;background:url(../image/work/paper.jpg)repeat top left;_background-image:url(../image/work/paper.jpg);*background-image:url(../image/work/paper.jpg);background-image:url(../image/work/paper.jpg)\9;padding-bottom:100px;}
 .main:after{
 	content:"";
 	display:block;

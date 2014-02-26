@@ -29,17 +29,19 @@
 
 <body>
 <div class="top">
-     <div class="logo"><img src="image/mylogo.png" alt="何燕珠" /></div>
-     <div class="nav">
-      <div class="dock_container">
-        <a class="dock_item" href="index.html"><span>我的首页</span><img src="image/dock/home.png" alt="我的首页" /></a>
-      <a class="dock_item" href="work.html"><span>我的作品</span><img src="image/dock/portfolio.png" alt="我的作品" /></a>
+  <div class="top-inner">
+  <div class="logo"><img src="image/mylogo.png" alt="何燕珠--前端开发" /></div>
+  <div class="nav">
+    <div class="dock_container">
+      <a class="dock_item" href="index.html"><span>我的首页</span><img src="image/dock/home.png" alt="我的首页" /></a>
+      <a class="dock_item" href="work.html"><span>我的经验</span><img src="image/dock/portfolio.png" alt="我的经验" /></a>
       <a class="dock_item" href="book.html"><span>我的书架</span><img src="image/dock/book.png" alt="我的书架" /></a>
       <a class="dock_item" href="index.html"><span>我的简历</span><img src="image/dock/calendar.png" alt="我的简历" /></a>
       <a class="dock_item" href="contact.html"><span>与我联系</span><img src="image/dock/email.png" alt="与我联系" /></a>
-      </div>
-  </div>
-  </div><!--end of top-->
+    </div>
+  </div><!--end of nav-->
+</div>
+</div><!--end of top-->
   <div class="main">
      <h2>我的标签</h2>
      <div class="main_content">
