@@ -77,7 +77,7 @@ header{
 	color:#574b42;
 	font-size:13px;
 	text-align: center;
-	line-height: 14px;
+	line-height: 15px;
 	background:url(../images/ballon.png)no-repeat center;
 	background-size:17px 16px;
 }
@@ -256,6 +256,8 @@ header{
 /******主体内容******/
 .ad{
 	position:relative;
+	height: auto;
+	width:100%;
 }
 .addel{
 	position:absolute;
