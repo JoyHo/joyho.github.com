@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type"  content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta name="MobileOptimized" content="320"/>
+<title>充值中心</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<header>
+		充值中心
+		<em class="user"><img src="images/user_d.png" alt="用户"><span>3</span></em>
+	</header>
+	<div id="overdiv">
+	<nav class="nav clearfix">
+		<ul id="nav" class="main-nav clearfix">
+			<li class="current"><a class="charge-calls" href="#">充话费</a></li>
+			<li><a class="charge-qcoins" href="#">充Q币</a></li>
+			<li><a class="buy-lottery" href="#">买彩票</a></li>
+			<li id="more"><a class="more" href="#">更多</a></li>
+		</ul>
+		<ul id="subnav" class="sub-nav clearfix">
+			<li><a class="charge-game" href="#">充网游</a></li>
+			<li><a class="buy-insurance" href="#">买保险</a></li>
+			<li><a class="loan" href="#">信用卡还贷</a></li>
+			<li><a class="payment" class="" href="#">生活缴费</a></li>
+			<li class="bbnone"><a class="ticket" href="#">买电影票</a></li>
+			<li class="bbnone"><a class="coin" href="#">游戏币交易</a></li>
+		</ul>
+		<span id="piece" class="down"></span>
+	</nav>
+	</div><!--over&nav-->
+	<div class="content">
+	<form class="form" action="#">
+		<p class="notice">现在充值话费，享96折优惠！</p>
+		<div class="enter">
+			<p class="input">
+				<input id="input" class="phonenum" type="number" placeholder="请输入手机号码" />
+				<a id="inputbtn" class="check" href="#"></a>
+			</p>
+	    </div>
+		<ul id="money" class="amount clearfix">
+			<li class="selected"><a href="javascript:void(0)"><i>10</i><i>元</i></a></li>
+			<li><a href="javascript:void(0)"><i>20</i><i>元</i></a></li>
+			<li><a href="javascript:void(0)"><i>30</i><i>元</i></a></li>
+			<li><a href="javascript:void(0)"><i>50</i><i>元</i></a></li>
+			<li><a href="javascript:void(0)"><i>100</i><i>元</i></a></li>
+			<li><a href="javascript:void(0)"><i>300</i><i>元</i></a></li>
+		</ul>
+		<p class="price"><span>售价：</span><span>￥98-99.5</span></p>
+		<input class="btn" type="submit" value="立即充值" />
+	</form>
+	</div>
+	<script src="js/zepto.js"></script>
+	<script src="js/touch.js"></script>
+	<script src="js/event.js"></script>
+	<script src="js/opera.js"></script>
+	<!--<script>
+		var navOper = {
+			curClick:function(overdiv,overdivclass,ulid,currentclass){
+				var ul = document.getElementById(ulid);
+				var liArr = ul.getElementsByTagName("li");
+				var ulLen = liArr.length;
+				var that = this;
+				var oDiv = document.getElementById(overdiv);
+				for(var i=0;i<ulLen;i++){
+					+function(i){
+						liArr[i].onclick = function(){
+							for(var j=0;j<ulLen;j++){
+								liArr[j].className = "";
+							}
+							this.className = currentclass;
+							if(this.id == "more"){//点击了更多按钮
+								that.moreNav("subnav","block","piece","fold");
+								oDiv.className = overdivclass;
+							}
+							else{//点击了主导航其他链接
+								oDiv.className = "";
+								that.moreNav("subnav","none","piece","down");
+							}
+
+						}//onclick
+					}(i)
+				}
+			},
+			moreNav:function(sub,display,pie,pieclass){//呈现或关闭其它导航
+				var subNav = document.getElementById(sub);
+				var pieceB = document.getElementById(pie);
+				subNav.style.display = display;
+				pieceB.className = pieclass;
+			},
+			touchOver:function(overdiv,navwrap,sub){//调试中。。。。。。。。
+				var that = this;
+				var oDiv = document.getElementById(overdiv);
+				var nw = oDiv.getElementsByTagName(navwrap)[0];
+				oDiv.onclick = function(e){
+					if(e.target != nw){
+						oDiv.className = "";
+						that.moreNav(sub,"none","piece","down");
+					}
+				}
+			}
+		}//navOper
+		window.onload = function(){
+			navOper.curClick("overdiv","over","nav","current");
+			// navOper.touchOver("overdiv","nav","subnav");
+		}
+	</script>-->
+</body>
+</html>
