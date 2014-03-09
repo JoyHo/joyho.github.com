@@ -270,6 +270,7 @@ header{
 	border:none;
 }
 .ad img{
+	display: block;
 	width:100%;
 }
 .content{
