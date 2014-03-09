@@ -50,7 +50,7 @@ var phoneCheck = {
 	deleteInput:function(){
 		$("#inputbtn").on("tap",function(){
 			if($(this).attr("class") == "delete"){
-				$("#input").attr("value","");
+				$("#input").val("");
 				$(this).attr("class","check");
 			}//delete
 		});
