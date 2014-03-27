@@ -1,0 +1,70 @@
+body {
+  cursor: default;
+  font-family: "Myriad Pro", "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", Calibri, Helvetica, tahoma, arial, simsun, "宋体", sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a:link,
+a:visited,
+a:hover {
+  color: #3f83f1;
+  text-decoration: none;
+}
+a:focus {
+  outline: 0;
+  -moz-outline: 0;
+}
+button,
+input,
+select,
+textarea {
+  outline: 0;
+}
+.color-red {
+  color: #ff0000;
+}
+.color-blue {
+  color: #0000ff;
+}
+.color-gray {
+  color: #a1a1a1;
+}
+.color-silver {
+  color: #eeeeee;
+}
+.color-coin-yellow {
+  color: #632500;
+}
+.color-coin-green {
+  color: #005017;
+}
+.bg-color-blank {
+  background: #ffffff;
+}
+.bg-color-silver {
+  background: #eeeeee;
+}
+.bg-color-silver-alpha {
+  background-color: #eeeeee;
+  background-color: rgba(204, 204, 204, 0.5);
+}
+.bg-color-green {
+  background: #c0e389;
+}
+.bg-color-orange {
+  background: #faac6c;
+}
+.bg-color-purple {
+  background: #9483b9;
+}
+.bg-color-cyan-blue {
+  background: #13b5b1;
+}
+.bg-color-blue {
+  background: #00b7ee;
+}
+.bg-color-khak1 {
+  background: #d1c0a5;
+}

@@ -1,0 +1,260 @@
+header {
+  height: 70px;
+  width: 100% !important;
+  padding: 0;
+  background: rgba(200, 200, 200, 0.5);
+}
+.col-left {
+  width: 18%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.col-left .icon-area {
+  width: 60px;
+  height: 50px;
+  margin: 0;
+  background: url(../images/icon.png) no-repeat;
+  background-position: 5px 0px;
+}
+.col-left p {
+  width: 60px;
+  margin: 0;
+  text-align: center;
+}
+.col-left p a {
+  font-size: 12px;
+}
+.col-middle {
+  width: 50%;
+  padding-left: 9px;
+  padding-right: 5px;
+}
+.col-middle .logored {
+  float: left;
+  display: block;
+  margin-top: 8px;
+  width: 138px;
+  height: 53px;
+  background: url(../images/logo.png) no-repeat;
+  background-position: 0px 0px;
+}
+.col-middle .logoblue {
+  float: left;
+  display: block;
+  margin-top: 8px;
+  width: 138px;
+  height: 53px;
+  background: url(../images/logo.png) no-repeat;
+  background-position: 0px -53px;
+}
+.col-middle .input-group {
+  position: absolute;
+  margin: 15px 70px 0 145px;
+}
+.col-middle .input-group .form-control {
+  height: 40px;
+}
+.col-middle .input-group .btn {
+  padding: 8px 6px;
+}
+.col-middle .input-group .btn .icon-search {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url(../images/icon.png) no-repeat;
+  background-position: -50px -55px;
+}
+.col-middle .dropdown {
+  float: right;
+}
+.col-middle .dropdown .dropdown-btn {
+  display: block;
+  width: 46px;
+  height: 46px;
+  padding: 10px 0;
+  margin: 0;
+}
+.col-middle .dropdown .dropdown-btn .icon-tag {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: url(../images/icon.png) no-repeat;
+  background-position: 0px -54px;
+}
+.col-middle .dropdown-menu {
+  width: 300px;
+  margin-left: -200px;
+  margin-top: 20px;
+}
+.col-middle .dropdown-menu li {
+  width: 300px;
+}
+.col-middle .dropdown-menu li .input-group {
+  position: static;
+  width: 278px;
+  margin: 10px;
+}
+.col-middle .dropdown-menu .item-type {
+  padding: 0 10px;
+}
+.col-middle .dropdown-menu .item-type .btn-group {
+  float: left;
+  width: 50%;
+}
+.col-middle .dropdown-menu .item-type .btn-group .item-title {
+  width: 113px;
+}
+.col-middle .dropdown-menu .item-type select {
+  width: 40%;
+  height: 30px;
+  float: left;
+}
+.col-middle .dropdown-menu .item-type .inputtypef {
+  margin-right: 53px;
+}
+.col-middle .dropdown-menu .item-tag {
+  margin-top: 10px;
+}
+.col-middle .dropdown-menu .item-tag a {
+  display: block;
+  float: left;
+  clear: none;
+  width: 21%;
+  padding: 0px;
+  margin: 2%;
+  text-align: center;
+  background: #f0f0f0;
+}
+.col-right {
+  width: 32%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.col-right .dropdown {
+  float: right;
+}
+.col-right .dropdown .dropdown-btn {
+  display: block;
+  height: 70px;
+  padding: 10px 0;
+  margin: 0;
+}
+.col-right .dropdown .dropdown-btn .icon-user {
+  float: right;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(../images/icon.png) no-repeat;
+  background-position: 0px -104px;
+  border-radius: 25px;
+}
+.col-right .dropdown-menu {
+  width: 300px;
+  margin-left: -255px;
+}
+.col-right .dropdown-menu .opt-btns li {
+  float: left;
+  padding: 5px;
+  margin: 1%;
+}
+.col-right .dropdown-menu .opt-btns li a:link,
+.col-right .dropdown-menu .opt-btns li a:visited,
+.col-right .dropdown-menu .opt-btns li a:hover,
+.col-right .dropdown-menu .opt-btns li a:active {
+  text-decoration: none;
+  color: #333;
+}
+.col-right .dropdown-menu .opt-btns li span {
+  font-color: #333;
+}
+.col-right .dropdown-menu .invite {
+  padding-left: 10px;
+}
+.col-right .user-info {
+  float: right;
+  margin-top: 7px;
+}
+.col-right .user-info ul {
+  margin: 0 auto;
+  width: 154px;
+}
+.col-right .user-info li {
+  float: left;
+}
+.col-right .user-info .info {
+  text-align: center;
+}
+.col-right .user-info .username {
+  margin-top: 10px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+.col-right .user-info .grade {
+  margin-bottom: 0;
+}
+.col-right .user-info .icon-coin-yellow {
+  display: block;
+  width: 35px;
+  height: 53px;
+  padding: 0;
+  line-height: 53px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  background: url(../images/icon.png) no-repeat;
+  background-position: 0px -154px;
+}
+.col-right .user-info .icon-coin-green {
+  display: block;
+  width: 35px;
+  height: 53px;
+  padding: 0;
+  line-height: 53px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  background: url(../images/icon.png) no-repeat;
+  background-position: -35px -154px;
+}
+.col-right .user-detail .user-info {
+  float: none;
+  margin: 0 auto;
+  padding: 5px 17px;
+}
+.col-right .user-detail input {
+  font-size: 16px;
+  color: #888;
+}
+@media screen and (max-width: 767px) {
+  .col-right {
+    float: right;
+    width: 50px !important;
+  }
+}
+@media screen and (min-width: 767px) {
+  .col-right .user-info {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .col-middle {
+    width: 64%;
+  }
+  .col-middle .input-group {
+    position: absolute;
+    left: -27%;
+    bottom: -60px;
+    width: 160%;
+    margin: 0;
+  }
+}
+.main {
+  position: absolute;
+  top: 45%;
+  margin-top: -108px;
+  width: 100%;
+}
+.form-signin-heading {
+  text-align: center;
+}
