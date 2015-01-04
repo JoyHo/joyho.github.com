@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/main.css?10" />
+<link id="low" rel="stylesheet" type="text/css" />
+<title>love</title>
+</head>
+<body>
+<div class="slide-panel cf">
+  <div id="slide" class="slide">
+    <ul id="slide_ul" class="cf">
+      <li class="features-0">
+        <img class="oneimg" src="images/1/1.jpg" width="100%">
+        <img class="onetxt" src="images/1/1txt.png">
+        <div class="arrow-up"></div>
+      </li>
+      <li>
+        <div class="puzzlu">
+            <img src="images/2/2.1.png">
+            <img src="images/2/2.2.png">
+            <img src="images/2/2.3.png">
+            <img src="images/2/2.4.png">
+            <img src="images/2/2.5.png">
+            <img src="images/2/2.1.png">
+            <img src="images/2/2.2.png">
+            <img src="images/2/2.3.png">
+            <img src="images/2/2.4.png">
+            <img src="images/2/2.5.png">
+        </div>
+        <img class="puzzlutxt" src="images/2/na.png">
+        <div class="arrow-up"></div>
+      </li>
+
+      <li>
+        <img class="img-2" src="images/3/3.jpg" width="100%" alt="">
+        <img class="img2ru" src="images/3/ru.png" alt="">
+        <img class="heart heartone" src="images/3/heart.png">
+        <img class="heart hearttwo" src="images/3/heart.png">
+        <img class="heart heartthree" src="images/3/heart.png">
+        <div class="ground-3"></div>
+        <div class="arrow-up"></div>
+      </li>
+
+      <li>
+        <img src="images/4/4.jpg" width="100%" alt="">
+        <p class="img4txt">一<br />切<br />尽<br />在<br />不<br />言<br />中<br />，<br />准<br />备<br />迎<br />接<br />new<br />life</p>
+        <div class="arrow-up"></div>
+      </li>
+
+      <li>
+        <img class="img5" src="images/5/5.jpg" width="100%" alt="">
+        <img class="txt5" src="images/5/5txt.png">
+        <div class="arrow-up"></div>
+      </li>
+      <li>
+        <div class="multipimg-6">
+          <img src="images/6/6.1.png" width="33%" alt="">
+          <img src="images/6/6.2.png" width="33%" alt="">
+          <img src="images/6/6.3.png" width="33%" alt="">
+          <img class="multipimg-6-1txt" src="images/6/mi.png" width="100px" alt="">
+          <img class="multipimg-6-2txt" src="images/6/ou.png" width="170px" alt="">
+          <img class="multipimg-6-3txt" src="images/6/zh.png" width="200px" alt="">
+          <div class="multipimg-6-lineone"></div>
+          <div class="multipimg-6-linetwo"></div>
+          <div class="multipimg-6-linethree"></div>
+        </div>
+        <div class="arrow-up"></div>
+      </li>
+      <li>
+        <div class="ground-6"></div>
+        <p class="txt7">在<br>这<br>里<br>，<br>有<br>团<br>聚<br>在<br>一<br>起<br>的<br>欢<br>乐</p>
+        <div class="arrow-up"></div>
+      </li>
+      <li>
+        <img class="img8" src="images/8/8.png" width="100%" alt="">
+        <div class="ground-7"></div>
+        <div class="arrow-up"></div>
+      </li>
+      <li>
+        <img class="txt9" src="images/9/txt.png">
+        <div class="ground-8"></div>
+        <div class="arrow-up"></div>
+      </li>
+      <li>
+          <img class="img9" src="images/10/10.jpg" width="100%" alt="">
+          <p class="txt10">倒计时8天，很紧张</p>
+          <div class="arrow-up"></div>
+      </li>
+      <li>
+          <img src="images/11/11.jpg" width="100%" alt="">
+          <img class="img11b" src="images/11/11b.png">
+          <div class="arrow-up"></div>
+      </li>
+    </ul>
+
+    <div id="slide_point" class="slide-point" style="display:none;">
+        <span class="current"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="js/slide.js?3"></script>
+
+<script type="text/javascript">
+function circlePercent(objdiv,dotime) {
+    var circle =  document.querySelector(objdiv);
+    var percent = percent || 0;
+    var all = null;
+    var left = null;
+    var right = null;
+    var tt = null;
+
+    if(circle !== null) {
+        all = circle.querySelectorAll("div");
+
+        left =  all[0] || document.createElement("div");
+        right = all[1] || document.createElement("div");
+        tt = setInterval(function(){
+            if(percent > 99) {
+                clearInterval(tt);
+            } else {
+                percent ++;
+                if(percent <= 50 && percent >= 0) {
+                    left.style.visibility = "hidden";
+                    right.style.webkitTransform = "rotate(" + percent * 3.6 + "deg)";
+                } else if(percent > 50) {
+                    percent = percent > 100 ? 100 : percent;
+                    left.style.visibility = "visible";
+                    left.style.webkitTransform = "rotate(" + (percent - 50) * 3.6 + "deg)";
+                    right.style.webkitTransform = "rotate(180deg)";
+                }
+            }
+        }, dotime);
+        !all[0] && circle.appendChild(left);
+        !all[1] && circle.appendChild(right);
+    }
+}
+
+function circle(objdiv,dotime,speed) {
+    var circle = document.querySelector(objdiv);
+    var t = null;
+    var percent = 0;
+    if(circle !== null) {
+        t = setInterval(function () {
+            if(percent > speed) {
+                clearInterval(t);
+            } else {
+                percent = parseFloat((percent + 0.02).toFixed(2));
+                circle.setAttribute("percent", percent);
+            }
+        }, dotime);
+    }
+}
+
+function circleDef(objdiv,dotime,speed) {
+    var circle = document.querySelector(objdiv);
+    var t = null;
+    var percent = 0.01;
+    if(circle !== null) {
+        t = setInterval(function () {
+            if(percent >= speed) {
+                clearInterval(t);
+            } else {
+                percent = parseFloat((percent + 0.02).toFixed(2));
+                circle.setAttribute("percent", percent);
+            }
+        }, dotime);
+    }
+}
+</script>
+
+
+<script type="text/javascript">
+var ua = navigator.userAgent;
+window.onload = function(){
+    if(parseInt(ua.substr(ua.indexOf('Android') + 8, 3))<3.0){
+        document.getElementById('low').href = 'css/low.css';
+    }
+}
+</script>
+
+</body>
+</html>

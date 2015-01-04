@@ -1,0 +1,33 @@
+.features-0 span,
+.features-1 span,
+.features-2 span,
+.features-3 span,
+.features-4 span,
+.features-5 span,
+.features-6 span,
+.features-7 span,
+.features-8 span{
+  opacity: 1 !important;
+}
+
+.features-1 .circle-percent {
+    position: relative;
+    display: block;
+    width: 62px;
+    height: 62px;
+    line-height: 1;
+    background: url(../images/1/circle-uc.png) no-repeat 0 0;
+    background-size: auto 100%;
+}
+.features-1 .circle-percent-android {
+	background: url(../images/1/circle-android.png) no-repeat 0 0;
+	background-size: auto 100%;
+}
+.features-1 .circle-percent-def {
+	background: url(../images/1/circle-def.png) no-repeat 0 0;
+	background-size: auto 100%;
+}
+.features-1 .circle-percent:after {
+    content: "";
+    background: transparent;
+}
